@@ -724,7 +724,7 @@ ul.breadcrumb li a:hover {
   top: 20%;
   position: absolute;
   max-width: 550px;
-  width: 100%;
+  width: 90%;
 }
 
 .overlay .it_card .it_top {
@@ -1433,6 +1433,10 @@ select {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.body {
+  background-color: #fdfdfd;
 }
 
 .aside {
@@ -2249,7 +2253,7 @@ div[role="progressbar"]::before {
           filter: drop-shadow(0px 7px 64px rgba(0, 0, 0, 0.07));
   border-radius: 5px;
   position: relative;
-  margin-top: 20px;
+  margin-top: 50px;
   height: 55px;
 }
 
@@ -2300,8 +2304,8 @@ div[role="progressbar"]::before {
   width: 30px;
   height: 30px;
   position: absolute;
-  bottom: 0;
-  left: 56px;
+  bottom: -43px;
+  left: 55px;
 }
 
 .company_logo .drag_in {
@@ -2565,7 +2569,7 @@ textarea {
   }
   .cards_ .it_card {
     top: 18%;
-    width: 100%;
+    width: 90%;
     left: 16%;
   }
   .hamburger {
@@ -2622,13 +2626,16 @@ textarea {
 
 @media (max-width: 1023px) {
   #section .aside {
-    position: absolute;
+    position: fixed;
     max-width: 250px;
     width: 100%;
     -webkit-transform: translateX(-768px);
             transform: translateX(-768px);
     -webkit-transition: 1s ease;
     transition: 1s ease;
+  }
+  .c_link span {
+    display: none;
   }
   .d_none {
     display: none;
@@ -2644,7 +2651,7 @@ textarea {
     height: 100vh;
     width: 100%;
     z-index: 6;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;
@@ -2723,7 +2730,7 @@ textarea {
 
 @media (max-width: 540px) {
   .main .nav .navigation .bell_avatar {
-    width: 37%;
+    width: 47%;
   }
   .chart_list .top_people {
     padding: 20px;
