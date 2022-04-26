@@ -207,7 +207,7 @@ h5 {
   max-width: 700px;
 }
 hr {
-  border: 1px solid var(--Gunmetal);
+  border: 0.5px solid rgba(44, 51, 58, 0.5);
   margin: 40px 0;
 }
 ul {
@@ -394,9 +394,12 @@ button {
     border: 1px solid rgba(204, 204, 204, 0.4);
   }
 }
-.icon {
+@mixin icons {
   width: 24px;
   height: 24px;
+}
+.icon {
+  @include icons;
 }
 .default-btn {
   @include button;
@@ -406,6 +409,12 @@ button {
   @include button;
   background-color: var(--DarkCyan);
   color: var(--White);
+}
+.outlined-btn {
+  @include button;
+  background-color: var(--White);
+  color: var(--DarkCyan);
+  border: 2px solid var(--DarkCyan);
 }
 .primary-btn {
   @include button;
@@ -614,7 +623,7 @@ $tab-content-height: 300px;
 }
 table {
   border-collapse: collapse;
-  font-family: var(--Montserat);
+  font-family: var(--Nunito);
   margin: 25px 0;
   font-size: 16px;
   font-weight: 600;
@@ -623,9 +632,10 @@ table {
     tr {
       background-color: var(--LavenderGray);
       text-align: left;
-      border: 1px solid var(--Gunmetal);
+      border: 1px solid rgba(44, 51, 58, 0.1);
       color: var(--Gunmetal);
       font-weight: 500;
+      border-radius: 5px 5px 0px 0px;
       &:nth-of-type(1) {
         background-color: #f3f3f3;
       }
@@ -633,7 +643,7 @@ table {
   }
   tbody {
     tr {
-      border: 1px solid var(--Gunmetal);
+      border: 1px solid rgba(44, 51, 58, 0.1);
       font-size: 15px;
       font-weight: 500;
       &:nth-of-type(even) {

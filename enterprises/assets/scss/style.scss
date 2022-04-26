@@ -700,6 +700,180 @@ div[role="progressbar"]::before {
     top: -27px;
   }
 }
+.int_plate {
+  .p_media {
+    border: 1px solid rgba(44, 51, 58, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+    h5 {
+      margin-bottom: 5px;
+    }
+    .prt {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.parent_int {
+  margin-top: 40px;
+  min-height: 160px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  img {
+    border-radius: 5px 5px 0 0;
+    height: 160px;
+    min-width: 240px;
+    object-fit: cover;
+  }
+  .int_txt {
+    padding: 20px;
+  }
+}
+.wrap_name {
+  p {
+    // margin-top: 45px;
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+}
+.company_name {
+  border: 1px solid rgba(44, 51, 58, 0.5);
+  box-sizing: border-box;
+  padding: 13px;
+  filter: drop-shadow(0px 7px 64px rgba(0, 0, 0, 0.07));
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+  height: 55px;
+  .name_shade {
+    margin: 0;
+    opacity: 50%;
+    &::after {
+      content: url("../svgs/locked.svg");
+      position: absolute;
+      right: 17px;
+      opacity: 100%;
+    }
+  }
+}
+.c_link {
+  background-color: #f3f3f3;
+  height: 53px;
+  padding: 13px;
+  span {
+    background-color: var(--White);
+    height: 53px;
+    padding: 13px;
+  }
+}
+.p-0 {
+  padding: 0;
+}
+.company_logo {
+  .logo {
+    position: relative;
+    width: 45%;
+    height: 80px;
+    margin-bottom: 80px;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .you_verify {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 0;
+      left: 56px;
+    }
+  }
+  .drag_in {
+    background-color: var(--Magnolia);
+    border-radius: 5px;
+    text-align: center;
+    // height: 150px;
+    padding: 40px;
+    margin-top: 30px;
+    border: 2px dashed rgba(44, 51, 58, 0.4);
+    img {
+      width: 40px;
+      height: 40px;
+      // margin-bottom: 30px;
+      display: block;
+      margin: 0 auto;
+    }
+    input {
+      display: none;
+    }
+    label {
+      margin-top: 30px;
+      font-size: 16px;
+      color: var(--DarkCyan);
+    }
+  }
+}
+.company_bio {
+  h5 {
+    margin: 0;
+  }
+}
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
+  outline: 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(44, 51, 58, 0.5);
+}
+
+.delete_acc {
+  margin-bottom: 40px;
+  h4 {
+    color: #ea5f5e;
+  }
+  button {
+    color: #ea5f5e;
+    border: 1px solid rgba(44, 51, 58, 0.5);
+    max-width: 200px;
+  }
+}
+
+.disclaim {
+  background-color: #f4f4f4;
+  padding: 25px;
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.warning_note {
+  padding: 10px 25px;
+  background: rgba(234, 95, 94, 0.2);
+  border: 0.92px solid rgba(234, 95, 94, 0.4);
+  p {
+    &::before {
+      @include icons;
+      content: url("../svgs/warning.svg");
+      position: relative;
+      top: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+.txt_notice {
+  padding: 25px;
+}
 @media (min-width: 688px) {
   .d_select {
     display: flex;
@@ -758,6 +932,38 @@ div[role="progressbar"]::before {
       margin: 0;
     }
   }
+  .int_plate {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .p_media {
+      width: 48%;
+    }
+  }
+  .parent_int {
+    display: flex;
+
+    img {
+      width: 30%;
+      height: auto;
+      border-radius: 5px 0px 0 5px;
+    }
+    .int_txt {
+      // max-width: 355px;
+    }
+    .outlined-btn {
+      width: 30%;
+      margin: 0 20px 0 0;
+    }
+    .important-btn {
+      width: 60%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .int_plate .p_media {
+    width: 32%;
+  }
 }
 .check_parent .checkbox .checkmark {
   top: -15px;
@@ -778,7 +984,19 @@ div[role="progressbar"]::before {
       width: 70%;
     }
   }
+  .wrap_name {
+    display: flex;
+    // justify-content: space-between;
+    .company_name {
+      width: 45%;
+      margin-right: 15px;
+    }
+    p {
+      margin-top: 45px;
+    }
+  }
 }
+
 @media (min-width: 1224px) {
   .contain {
     padding: 0 60px;
@@ -793,7 +1011,7 @@ div[role="progressbar"]::before {
     max-width: 700px;
   }
   .cards_ {
-    position: absolute;
+    position: fixed;
     // left: 50%;
     display: flex;
     justify-content: center;
@@ -801,8 +1019,9 @@ div[role="progressbar"]::before {
     .it_content {
     }
     .it_card {
-      top: 20%;
+      top: 18%;
       width: 100%;
+      left: 16%;
     }
   }
   .hamburger {
@@ -929,10 +1148,23 @@ div[role="progressbar"]::before {
       top: 0;
     }
   }
+  .company_logo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 690px;
+    .drag_in {
+      width: 70%;
+    }
+  }
   .main .nav .navigation .bell_avatar .icon {
     display: none;
   }
-  .dont_show_on_desktop{
+  .dont_show_on_desktop {
+    display: none;
+  }
+}
+@media (max-width: 462px) {
+  .dont_show_on_462 {
     display: none;
   }
 }
@@ -947,6 +1179,9 @@ div[role="progressbar"]::before {
         font-size: 16px;
       }
     }
+  }
+  .dont_show_on_dsk {
+    display: none;
   }
   .chart_list .top_people .people_block .score img {
     margin-top: 5px;

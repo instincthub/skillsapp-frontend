@@ -1,31 +1,26 @@
-var yLabels = ["Poor", "Average", "Good", "Thursday", "Friday"];
-// var yLabelCounter = 0;
-
-var chart = new CanvasJS.Chart("chartContainer", {
-  title: {},
-  axisY: {
-    interval: 30,
-    labelFormatter: function (e) {
-      var yCats = yLabels[e.value / 50];
-      return yCats;
+const ctx = document.getElementById("chartContainer").getContext("2d");
+const myChart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    datasets: [
+      {
+        label: "Total people that learned",
+        data: [16, 10, 5, 13, 24, 30],
+        backgroundColor: ["#fff"],
+        fill: false,
+        lineTension: 0.3,
+        borderColor: [" #00838F"],
+        pointHoverRadius: 0,
+        borderWidth: 4,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
     },
   },
-  data: [
-    {
-      type: "line",
-      dataPoints: [
-        { label: "January", y: 71 },
-        { label: "Febuary", y: 55 },
-        { label: "March", y: 50 },
-        { label: "April", y: 65 },
-        { label: "May", y: 95 },
-        { label: "June", y: 68 },
-        { label: "July", y: 28 },
-        { label: "AUgust", y: 34 },
-        { label: "September", y: 14 },
-      ],
-    },
-  ],
 });
-
-chart.render();

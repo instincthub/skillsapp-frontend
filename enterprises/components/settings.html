@@ -184,8 +184,87 @@
                     This information will be displayed publicly so be careful
                     what you share.
                   </p>
+                  <div class="wrap_name">
+                    <div class="company_name">
+                      <h5 class="name_shade">Wizer Academy</h5>
+                    </div>
+                    <p>
+                      Please
+                      <a href="mailto:msodq2018@gmail.com">contact us</a> if
+                      you’d like to change your company name.
+                    </p>
+                  </div>
+                  <div class="wrap_name">
+                    <div class="company_name p-0 mt-3">
+                      <h5 class="c_link">
+                        Instincthub.app/Company/ <span>#438901</span>
+                      </h5>
+                    </div>
+                    <p>
+                      Copy and share Company ID to add members under your
+                      establishment
+                    </p>
+                  </div>
+                  <form action="">
+                    <div class="company_logo mt-5 mb-5">
+                      <div class="logo">
+                        <h5>Company Logo *</h5>
+                        <img src="../assets/svgs/avatar.png" alt="" />
+                        <img
+                          src="../assets/svgs/verified.svg"
+                          alt=""
+                          class="you_verify"
+                        />
+                      </div>
 
-                  <div class="company_name"></div>
+                      <div class="drag_in">
+                        <img src="../assets/svgs/frame.svg" alt="frame" />
+                        <input type="file" id="change_dp" />
+                        <label for="change_dp"
+                          >Click to replace or drag and drop
+                        </label>
+                        <span>PNG, JPG or GIF (1:1 max 150 x 150px)</span>
+                      </div>
+                    </div>
+
+                    <div class="company_bio max_700">
+                      <h5>About Us *</h5>
+                      <p>Write a brief description about your company</p>
+                      <textarea name="" class="mt-2 mb-4"></textarea>
+
+                      <div class="web_c">
+                        <h5>Company Url *</h5>
+                        <div class="input_parent">
+                          <input type="url" placeholder="Company Website" />
+                          <label for="Last Name">Company Website</label>
+                        </div>
+                        <p>
+                          All of the fields on this page are compulsory and can
+                          be Changed at any time, and by filling them out,
+                          you're giving us consent to share this data wherever
+                          your user profile appears. Please see our
+                          <a href=""> privacy statement</a> to learn more about
+                          how we use this information.
+                        </p>
+                        <button
+                          type="submit"
+                          class="important-btn"
+                          style="max-width: 200px; background-color: #206d62"
+                        >
+                          Update profile
+                        </button>
+                      </div>
+                    </div>
+                    <hr />
+                  </form>
+                  <div class="delete_acc">
+                    <h4>Delete account</h4>
+                    <p>
+                      Once you delete your account, there is no going back.
+                      Please be certain.
+                    </p>
+                    <button onclick="showOverlay()">Delete your account</button>
+                  </div>
                 </div>
               </div>
 
@@ -363,7 +442,7 @@
               </div>
 
               <!-- Notification -->
-              <div class="tab">
+              <div class="tab dont_show_on_462">
                 <input
                   class="tab__radio"
                   type="radio"
@@ -420,6 +499,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="border-top">
                     <div class="maximize">
                       <div class="from_us mt-4">
@@ -462,11 +542,267 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="border-top">
+                    <div class="maximize">
+                      <div class="from_us mt-4">
+                        <div class="mail_from_us">
+                          <h5>Reminders</h5>
+                          <p>
+                            These are notifications to reminds you of updates
+                            you might have missed.
+                          </p>
+                        </div>
+
+                        <div class="mail_check mt-4">
+                          <div class="check_parent">
+                            <label class="checkbox notNormal">
+                              <h5>Do not notify me</h5>
+                              <!-- <p>News about products and features updates.</p> -->
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="check_parent">
+                            <label class="checkbox notNormal">
+                              <h5>Important reminders only</h5>
+                              <p>
+                                Only notify me if the reminder is tagged as
+                                important.
+                              </p>
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="check_parent">
+                            <label class="checkbox notNormal">
+                              <h5>All reminders</h5>
+                              <p>Notify me for all other activity.</p>
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border-top">
+                    <div class="maximize">
+                      <div class="from_us mt-4">
+                        <div class="mail_from_us">
+                          <h5>More activities about you</h5>
+                          <p>
+                            These are notifications for posts on your profile,
+                            likes and other reactions to your post and more.
+                          </p>
+                        </div>
+
+                        <div class="mail_check mt-4">
+                          <div class="check_parent">
+                            <label class="checkbox notNormal">
+                              <h5>Do not notify me</h5>
+                              <!-- <p>News about products and features updates.</p> -->
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+
+                          <div class="check_parent">
+                            <label class="checkbox notNormal">
+                              <h5>All activity</h5>
+                              <p>Notify me for all other activity.</p>
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INTEGRATION -->
+              <div class="tab dont_show_on_dsk">
+                <input
+                  class="tab__radio"
+                  type="radio"
+                  id="tab-7"
+                  name="tab-group-1"
+                />
+                <label class="tab__label" for="tab-7">Integrations</label>
+                <div class="tab__content mt-3 profile border-top">
+                  <!-- We just Launched -->
+                  <div class="parent_int mb-5">
+                    <img src="../assets/images/launched.jpg" alt="" />
+                    <div class="int_txt">
+                      <h5>We’ve just released a new Feature!</h5>
+                      <p>
+                        Check out the all new dashboard view. Loads 2x faster.
+                      </p>
+                      <div class="bbtn">
+                        <button class="outlined-btn">Dismiss</button>
+                        <button class="important-btn">View Dashboard</button>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="">Connected apps</h3>
+                  <p class="max_605">
+                    Integrate with your favorite apps and supercharge your
+                    Learning process.
+                  </p>
+
+                  <div class="int_plate mt-3">
+                    <div class="p_media">
+                      <div class="prt">
+                        <div>
+                          <img src="../assets/svgs/slack.svg" alt="" />
+                          <h5>Slack</h5>
+                        </div>
+                        <div class="switch_parent">
+                          <label class="switch">
+                            <input type="checkbox" />
+
+                            <span class="slider round"> </span>
+                          </label>
+                        </div>
+                      </div>
+                      <p>
+                        Build a stronger relationship with internal partners,
+                      </p>
+                    </div>
+                    <div class="p_media">
+                      <div class="prt">
+                        <div>
+                          <img src="../assets/svgs/jira.svg" alt="" />
+                          <h5>Jira</h5>
+                        </div>
+                        <div class="switch_parent">
+                          <label class="switch">
+                            <input type="checkbox" />
+
+                            <span class="slider round"> </span>
+                          </label>
+                        </div>
+                      </div>
+                      <p>
+                        Atlassian bug tracking and project management software.
+                      </p>
+                    </div>
+                    <div class="p_media">
+                      <div class="prt">
+                        <div>
+                          <img src="../assets/svgs/Notion.svg" alt="" />
+                          <h5>Notion</h5>
+                        </div>
+                        <div class="switch_parent">
+                          <label class="switch">
+                            <input type="checkbox" />
+
+                            <span class="slider round"> </span>
+                          </label>
+                        </div>
+                      </div>
+                      <p>
+                        Automatically sync your Notion database with your
+                        projects.
+                      </p>
+                    </div>
+                    <div class="p_media">
+                      <div class="prt">
+                        <div>
+                          <img src="../assets/svgs/Figma.svg" alt="" />
+                          <h5>Figma</h5>
+                        </div>
+                        <div class="switch_parent">
+                          <label class="switch">
+                            <input type="checkbox" />
+
+                            <span class="slider round"> </span>
+                          </label>
+                        </div>
+                      </div>
+                      <p>
+                        Bring your design system into your project directly from
+                        Figma.
+                      </p>
+                    </div>
+                    <div class="p_media">
+                      <div class="prt">
+                        <div>
+                          <img src="../assets/svgs/github.svg" alt="" />
+                          <h5>Github</h5>
+                        </div>
+                        <div class="switch_parent">
+                          <label class="switch">
+                            <input type="checkbox" />
+
+                            <span class="slider round"> </span>
+                          </label>
+                        </div>
+                      </div>
+                      <p>
+                        Sync and hosting website changes for programming
+                        projects using the git version control system.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <form
+          action=""
+          class="overlay cards_"
+          id="overlay_"
+          style="overflow: scroll"
+        >
+          <div class="it_card" style="padding: 0">
+            <div class="d_flex close_button disclaim">
+              <h4>Are you sure you want to do this?</h4>
+              <img
+                src="../assets/svgs/close_icon.svg"
+                alt=""
+                onclick="remove_class()"
+              />
+            </div>
+            <div class="warning_note">
+              <p>This is extremely important.</p>
+            </div>
+
+            <div class="txt_notice">
+              <p>
+                We will immediately delete all your data, along with all of your
+                chats, employee directory and courses.
+              </p>
+              <p>
+                you will no longer be billed, after 90 days you company details
+                will no longer be available to anyone on Instincthub.
+              </p>
+              <p>For more help, read our article “Deleting your account”.</p>
+              <!-- Enter Username to confirm -->
+              <div class="input_parent">
+                <input type="text" placeholder="your username or email" />
+                <label for="Last Name">your username or email</label>
+              </div>
+              <!-- Enter Password to confirm -->
+              <div class="password_parent">
+                <input
+                  type="password"
+                  placeholder="To verify,type  “delete my account”"
+                />
+                <label for="Last Name"
+                  >To verify,type “delete my account”"</label
+                >
+              </div>
+              <button class="important-btn">
+                Cancel plan and delete this account
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
     <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
@@ -481,12 +817,6 @@
         $("#parent").on("change", function () {
           $(".child").prop("checked", $(this).prop("checked"));
         });
-        // $(".child").on("change", function () {
-        //   $("#parent").prop(
-        //     "checked",
-        //     $(".child:checked").length ? true : false
-        //   );
-        // });
       });
     </script>
   </body>

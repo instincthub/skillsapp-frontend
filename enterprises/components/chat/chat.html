@@ -7,10 +7,11 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="./assets/images/instincthub-thumnail.png"
+      href="../../assets/images/instincthub-thumnail.png"
     />
-    <title>Enterprises Dashboard - Instincthub</title>
-    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <title>Chat Room - Instincthub</title>
+    <link rel="stylesheet" href="../../assets/scss/style.css" />
+    <link rel="stylesheet" href="./chat.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,11 +27,11 @@
 
       <div class="aside">
         <a href="index.html"
-          ><img src="./assets/svgs/instinctHub.svg" alt=""
+          ><img src="../../assets/svgs/instinctHub.svg" alt=""
         /></a>
 
         <div class="list">
-          <div class="p_list current">
+          <div class="p_list">
             <svg
               width="24"
               height="24"
@@ -43,7 +44,7 @@
                 fill="black"
               />
             </svg>
-            <a href="index.html">Dashboard</a>
+            <a href="../index.html">Dashboard</a>
           </div>
           <div class="p_list">
             <svg
@@ -58,7 +59,7 @@
                 fill="#2C333A"
               />
             </svg>
-            <a href="./components/courses/e_courses.html">Courses</a>
+            <a href="../components/courses/e_courses.html">Courses</a>
           </div>
           <div class="p_list">
             <svg
@@ -73,9 +74,9 @@
                 fill="#2C333A"
               />
             </svg>
-            <a href="./components/employe.html">Employee</a>
+            <a href="../components/employe.html">Employee</a>
           </div>
-          <div class="p_list">
+          <div class="p_list current">
             <svg
               width="24"
               height="24"
@@ -88,7 +89,7 @@
                 fill="#2C333A"
               />
             </svg>
-            <a href="./components/chat/">Chat Room</a>
+            <a href="../components/chat/">Chat Room</a>
           </div>
           <div class="p_list">
             <svg
@@ -104,13 +105,13 @@
               />
             </svg>
 
-            <a href="./components/settings.html">Settings</a>
+            <a href="../components/settings.html">Settings</a>
           </div>
         </div>
       </div>
       <div class="lay"></div>
-      <!--========
-      ASIDE ENDS
+      <!--==================
+      NAVIGATION AND MAIN CONTENT
       ===========-->
       <div class="main">
         <div class="nav">
@@ -159,171 +160,21 @@
             <!-- Navigation Ends -->
           </div>
         </div>
+
+        <!--======
+        MAIN CONTAINER FOR CONTENTS
+        ========= -->
         <div class="major contain">
-          <div class="overview mt-10 d_flex">
-            <h3>Overview</h3>
-            <select name="" id="">
-              <option value="" disabled>This Week</option>
-              <option value="">Last 7 days</option>
-              <option value="">Last Month</option>
-            </select>
-          </div>
-
-          <div class="view mt-3">
-            <div class="each_view">
-              <div class="snip">
-                <img src="./assets/svgs/user.svg" alt="user's svg" />
-                <h4>92</h4>
-              </div>
-              <p>Total Users</p>
-            </div>
-            <div class="each_view">
-              <div class="snip">
-                <img src="./assets/svgs/taken.svg" alt="user's svg" />
-                <h4>13</h4>
-              </div>
-              <p>Courses Taken</p>
-            </div>
-            <div class="each_view">
-              <div class="snip">
-                <img src="./assets/svgs/duration.svg" alt="duration svg" />
-                <h4>5h 10m</h4>
-              </div>
-              <p>Watch Hour</p>
-            </div>
-            <div class="each_view">
-              <div class="snip">
-                <img src="./assets/svgs/complete.svg" alt="user's svg" />
-                <h4>7</h4>
-              </div>
-              <p>Courses Completion</p>
-            </div>
-          </div>
-
-          <div class="chart_list mt-5 mb-5">
-            <div class="chart">
-              <div class="spin">
-                <h3>Learners Analytics</h3>
-                <select name="" id="">
-                  <option value="" disabled>This Week</option>
-                  <option value="">Last 7 days</option>
-                  <option value="">Last Month</option>
-                </select>
-              </div>
-              <canvas id="chartContainer"></canvas>
-            </div>
-
-            <div class="top_people">
-              <h3>Top Learners</h3>
-              <div class="people_block">
-                <div class="score">
-                  <img src="./assets/images/img1.png" alt="" />
-                  <h4>Brooklyn Simmons</h4>
-
-                  <h6 class="mark">250 points</h6>
-                </div>
-                <h6 class="mark2">250 points</h6>
-              </div>
-              <div class="people_block">
-                <div class="score">
-                  <img src="./assets/images/img2.png" alt="" />
-                  <h4>Robert Fox</h4>
-
-                  <h6 class="mark">100 points</h6>
-                </div>
-                <h6 class="mark2">100 points</h6>
-              </div>
-              <div class="people_block">
-                <div class="score">
-                  <img src="./assets/images/img3.png" alt="" />
-                  <h4>Guy Hawkins</h4>
-
-                  <h6 class="mark">250 points</h6>
-                </div>
-                <h6 class="mark2">250 points</h6>
-              </div>
-              <div class="people_block">
-                <div class="score">
-                  <img src="./assets/images/img4.png" alt="" />
-                  <h4>Esther Howard</h4>
-
-                  <h6 class="mark">80 points</h6>
-                </div>
-                <h6 class="mark2">80 points</h6>
-              </div>
-              <div class="people_block">
-                <div class="score">
-                  <img src="./assets/images/img5.png" alt="" />
-                  <h4>Wade Warren</h4>
-
-                  <h6 class="mark">30 points</h6>
-                </div>
-                <h6 class="mark2">30 points</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- PROGRESS BAR
-          =================== -->
-          <div class="view mt-1 mb-3 target">
-            <div class="each_target">
-              <div class="snip">
-                <div class="snip_txt">
-                  <h4>Weekly Target</h4>
-                  <p>25% Achieved</p>
-                </div>
-
-                <div
-                  role="progressbar"
-                  aria-valuenow="65"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="--value: 30"
-                ></div>
-              </div>
-              <!-- <p>Total Users</p> -->
-            </div>
-            <div class="each_target">
-              <div class="snip">
-                <div class="snip_txt">
-                  <h4>Monthly Target</h4>
-                  <p>57% Achieved</p>
-                </div>
-
-                <div
-                  role="progressbar"
-                  aria-valuenow="65"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="--value: 57"
-                ></div>
-              </div>
-              <!-- <p>Total Users</p> -->
-            </div>
-            <div class="each_target">
-              <div class="snip">
-                <div class="snip_txt">
-                  <h4>Yearly Target</h4>
-                  <p>22% Achieved</p>
-                </div>
-
-                <div
-                  role="progressbar"
-                  aria-valuenow="65"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="--value: 22"
-                ></div>
-              </div>
-            </div>
-          </div>
+          <!--CHAT ROOM-->
         </div>
       </div>
     </section>
     <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="./assets/js/burger.js"></script>
-    <script src="./assets/js/chart.js"></script>
+    <script src="../../assets/js/burger.js"></script>
+    <script src="../../assets/js/chart.js"></script>
+    <script src="../assets/js/overlay.js"></script>
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/filter.js"></script>
   </body>
 </html>
