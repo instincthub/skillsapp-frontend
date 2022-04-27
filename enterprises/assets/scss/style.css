@@ -1202,7 +1202,7 @@ input:valid {
   font-family: Arial;
   border: 1px solid var(--Gunmetal);
   border-radius: 5px;
-  min-width: 150px;
+  min-width: 130px;
 }
 
 .custom-select select {
@@ -1280,10 +1280,10 @@ input:valid {
 }
 
 .search_parent img {
-  width: 24px;
+  width: 20px;
   height: 24px;
   position: absolute;
-  top: 13px;
+  top: 15px;
   left: 16px;
 }
 
@@ -2455,6 +2455,100 @@ textarea {
   display: none;
 }
 
+.search_icon {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 18px;
+}
+
+.teams {
+  border: 1px solid rgba(44, 51, 58, 0.2);
+  background-color: var(--White);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  max-width: 650px;
+}
+
+.teams .teaM_n {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 5px 5px 0 0;
+  background: #f4f4f4;
+  font-family: var(--Montserat);
+  border-radius: 0;
+}
+
+.teams .empty_state .empty {
+  text-align: center;
+  padding: 20px;
+}
+
+.teams .empty_state .empty .transit {
+  width: 110px;
+  height: 110px;
+}
+
+.teams .empty_state .empty p {
+  text-align: center;
+}
+
+.teams .empty_state .empty button {
+  position: static;
+  max-width: 100%;
+}
+
+.add_this {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.add_this .password_parent {
+  width: 75%;
+  margin: 0;
+}
+
+.add_this .trig_team {
+  margin: 0;
+  width: 23%;
+  height: 50px;
+}
+
+.p_person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.p_person .txt_h6 {
+  font-size: 16px;
+  margin-top: 3px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-family: var(--Montserat);
+  height: auto;
+}
+
+.team_list {
+  min-height: 200px;
+}
+
+.team_list .content {
+  font-size: 16px;
+  text-align: left;
+  font-family: var(--Nunito);
+  background-color: var(--White);
+}
+
 @media (min-width: 688px) {
   .ppr button {
     max-width: 214px;
@@ -2804,6 +2898,9 @@ textarea {
 @media (max-width: 540px) {
   .main .nav .navigation .bell_avatar {
     width: 47%;
+  }
+  .overlay .it_card .it_content {
+    padding: 0;
   }
   .chart_list .top_people {
     padding: 20px;

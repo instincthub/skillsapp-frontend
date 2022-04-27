@@ -290,11 +290,80 @@
                   <!--===========
                     TEAM LIST
                   ============= -->
-                  <section class="team_list">
+                  <section class="team_list mt-5">
                     <div class="teams">
-                      <input type="text" value="Team Roselyn" readonly />
+                      <input
+                        type="text"
+                        value="Team Roselyn"
+                        readonly
+                        class="teaM_n"
+                      />
+                      <div class="empty_state">
+                        <div class="empty">
+                          <!-- <div>
+                            <img
+                              src="../assets/svgs/empty_team.svg"
+                              class="transit"
+                            />
+                            <h5 class="m-0">No team member yet...</h5>
+                            <p>
+                              Add a member by tapping the add member button
+                              below.
+                            </p>
+                          </div> -->
+
+                          <div class="team_list">
+                            <div class="content">
+                              <!-- <div class="p_person">
+                                <input
+                                  class="txt_h6"
+                                  value="Esther Howard"
+                                  readonly
+                                />
+                                <img
+                                  src="../assets/svgs/close_icon.svg"
+                                  alt="delete"
+                                  class="icon delete"
+                                />
+                              </div> -->
+                            </div>
+                          </div>
+                          <button
+                            class="important-btn remove_this"
+                            onclick="addMorePeople()"
+                          >
+                            Add More people
+                          </button>
+                          <form action="" id="new_team_form">
+                            <div class="add_this">
+                              <div class="password_parent">
+                                <input
+                                  type="text"
+                                  placeholder="What else are you adding ?"
+                                  style="padding-left: 40px"
+                                  class="new_team_input"
+                                  value=""
+                                />
+
+                                <img
+                                  src="https://www.svgrepo.com/show/14071/search.svg"
+                                  alt="search-icon"
+                                  class="search_icon"
+                                />
+                              </div>
+                              <button
+                                type="submit"
+                                class="important-btn trig_team"
+                              >
+                                Add
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
                   </section>
+                  <!-- TEAM ENDS -->
                 </div>
               </div>
 
@@ -764,7 +833,14 @@
             </div>
           </div>
         </div>
-        <form action="" class="overlay cards_ createTeam" id="d-0 new_taskform">
+
+        <!-- This form create a new user account -->
+        <form
+          action=""
+          class="overlay cards_ createTeam"
+          id="d-0 new_taskform"
+          style="display: none"
+        >
           <div class="it_card">
             <div class="it_content">
               <div class="d_flex close_button">
@@ -797,6 +873,8 @@
             </div>
           </div>
         </form>
+
+        <!-- THIS FORM DELETE USERS ACCOUNT -->
         <form
           action=""
           class="overlay cards_"
@@ -838,7 +916,7 @@
                   placeholder="To verify,type  “delete my account”"
                 />
                 <label for="Last Name"
-                  >To verify,type “delete my account”"</label
+                  >To verify,type <b> “delete my account”</b></label
                 >
               </div>
               <button class="important-btn">
@@ -852,6 +930,7 @@
     <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
 
     <script src="../assets/js/burger.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/js/chart.js"></script>
     <script src="../assets/js/overlay.js"></script>
     <script src="../assets/js/search.js"></script>
