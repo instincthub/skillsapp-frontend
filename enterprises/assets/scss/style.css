@@ -1197,21 +1197,78 @@ input:valid {
   background-color: #ffffff;
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-  background-image: url("https://www.svgrepo.com/show/304563/arrow-down.svg");
-  background-repeat: no-repeat;
-  background-position-x: 90%;
-  background-position-y: 10px;
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  border: 1px solid var(--Gunmetal);
   border-radius: 5px;
-  border: 1px solid #dfdfdf;
-  border-radius: 2px;
-  margin-top: 30px;
+  min-width: 150px;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: transparent;
+  border: 1px solid rgba(44, 51, 58, 0.7);
   border-radius: 5px;
-  padding: 1rem;
-  padding-right: 2rem;
+  font-family: var(--Montserat);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: var(--Gunmetal) transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--Gunmetal) transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: var(--Gunmetal);
+  padding: 8px 16px;
+  border: 1px solid var(--Gunmetal);
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: var(--Magnolia);
+  top: 100%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .search_parent {
@@ -1565,6 +1622,10 @@ select {
   display: flex;
 }
 
+.major .overview .custom-select {
+  width: 150px;
+}
+
 .major .overview h3 {
   margin: 0 auto 0 0;
   font-weight: 600;
@@ -1774,7 +1835,7 @@ div[role="progressbar"]::before {
   content: counter(percentage) "%";
 }
 
-.d_select select {
+.d_select .custom-select {
   width: 100%;
   font-size: 16px;
   opacity: 0.6;
@@ -2147,12 +2208,12 @@ div[role="progressbar"]::before {
 
 .e_table table th,
 .e_table table td {
-  min-width: 120px;
+  min-width: 190px;
 }
 
 .e_table table th:nth-child(1),
 .e_table table td:nth-child(1) {
-  min-width: 40px;
+  min-width: 50px;
 }
 
 .e_table table th:nth-child(5),
@@ -2162,7 +2223,7 @@ div[role="progressbar"]::before {
 
 .e_table table th:nth-child(6),
 .e_table table td:nth-child(6) {
-  min-width: 160px;
+  min-width: 250px;
 }
 
 .download_now a {
@@ -2287,7 +2348,6 @@ div[role="progressbar"]::before {
 
 .company_logo .logo {
   position: relative;
-  width: 45%;
   height: 80px;
   margin-bottom: 80px;
 }
@@ -2391,7 +2451,20 @@ textarea {
   padding: 25px;
 }
 
+#d-0 {
+  display: none;
+}
+
 @media (min-width: 688px) {
+  .ppr button {
+    max-width: 214px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+  }
+  .prime_50 {
+    width: 60%;
+  }
   .d_select {
     display: -webkit-box;
     display: -ms-flexbox;

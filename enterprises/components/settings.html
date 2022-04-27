@@ -277,13 +277,24 @@
                   name="tab-group-1"
                 />
                 <label class="tab__label" for="tab-2">Team</label>
-                <div class="tab__content mt-3 profile border-top">
+                <div class="tab__content mt-3 profile border-top ppr">
                   <h3>Team Members</h3>
-                  <p class="max_605">
+                  <p class="prime_50">
                     To help with learning, users are assigned into different
                     groups for team work. users can be removed and added based
                     on descresion of admin.
                   </p>
+                  <button class="important-btn" onclick="createTeam()">
+                    Create Team
+                  </button>
+                  <!--===========
+                    TEAM LIST
+                  ============= -->
+                  <section class="team_list">
+                    <div class="teams">
+                      <input type="text" value="Team Roselyn" readonly />
+                    </div>
+                  </section>
                 </div>
               </div>
 
@@ -753,6 +764,39 @@
             </div>
           </div>
         </div>
+        <form action="" class="overlay cards_ createTeam" id="d-0 new_taskform">
+          <div class="it_card">
+            <div class="it_content">
+              <div class="d_flex close_button">
+                <h4>
+                  Create a team <br />
+                  <span>Let’s get you set up !</span>
+                </h4>
+
+                <img
+                  src="../assets/svgs/close_icon.svg"
+                  alt=""
+                  onclick="dontCreate()"
+                />
+              </div>
+              <div class="input_parent">
+                <input type="text" placeholder="Team name *" id="new_input" />
+
+                <label for="Last Name">Team name *</label>
+              </div>
+
+              <button
+                class="important-btn"
+                type="submit"
+                value="task"
+                id="create_it"
+                style="position: static"
+              >
+                Create team
+              </button>
+            </div>
+          </div>
+        </form>
         <form
           action=""
           class="overlay cards_"
@@ -761,7 +805,7 @@
         >
           <div class="it_card" style="padding: 0">
             <div class="d_flex close_button disclaim">
-              <h4>Are you sure you want to do this?</h4>
+              <h4>Delete Account</h4>
               <img
                 src="../assets/svgs/close_icon.svg"
                 alt=""
@@ -812,6 +856,8 @@
     <script src="../assets/js/overlay.js"></script>
     <script src="../assets/js/search.js"></script>
     <script src="../assets/js/filter.js"></script>
+    <script src="../assets/js/team.js"></script>
+    <script src="../assets/js/select.js"></script>
     <script>
       $(function () {
         $("#parent").on("change", function () {

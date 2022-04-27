@@ -162,11 +162,23 @@
         <div class="major contain">
           <div class="overview mt-10 d_flex">
             <h3>Overview</h3>
-            <select name="" id="">
-              <option value="" disabled>This Week</option>
-              <option value="">Last 7 days</option>
-              <option value="">Last Month</option>
-            </select>
+            <div class="custom-select">
+              <select>
+                <option value="0">Select car:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+              </select>
+            </div>
           </div>
 
           <div class="view mt-3">
@@ -204,11 +216,13 @@
             <div class="chart">
               <div class="spin">
                 <h3>Learners Analytics</h3>
-                <select name="" id="">
-                  <option value="" disabled>This Week</option>
-                  <option value="">Last 7 days</option>
-                  <option value="">Last Month</option>
-                </select>
+                <div class="custom-select">
+                  <select>
+                    <option value="1">This Week</option>
+                    <option value="2">Last week</option>
+                    <option value="3">2 weeks ago</option>
+                  </select>
+                </div>
               </div>
               <canvas id="chartContainer"></canvas>
             </div>
@@ -218,7 +232,7 @@
               <div class="people_block">
                 <div class="score">
                   <img src="./assets/images/img1.png" alt="" />
-                  <h4>Brooklyn Simmons</h4>
+                  <h4>Susan Simmons</h4>
 
                   <h6 class="mark">250 points</h6>
                 </div>
@@ -326,5 +340,6 @@
     <script src="./assets/js/burger.js"></script>
     <script src="./assets/js/chart.js"></script>
     <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/select.js"></script>
   </body>
 </html>
