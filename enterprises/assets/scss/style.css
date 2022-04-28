@@ -192,6 +192,15 @@ h5 {
   margin-bottom: 20px;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .op-5 {
   opacity: 50%;
 }
@@ -243,6 +252,38 @@ a,
 label,
 ::placeholder {
   font-family: var(--Montserat);
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  font-family: var(--Nunito);
+}
+
+ol li:before {
+  margin-right: 16px;
+  margin-top: 6px;
+  content: counter(item);
+  background: var(--Gunmetal);
+  border-radius: 100%;
+  color: white;
+  font-weight: 700;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+}
+
+.display_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 p,
@@ -1750,9 +1791,10 @@ input:valid {
 
 .chart_list .top_people h3 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 22px;
-  margin-top: 30px;
+  margin-top: 9px;
+  margin-bottom: 20px;
 }
 
 .chart_list .top_people .people_block {
@@ -2394,6 +2436,15 @@ div[role="progressbar"]::before {
   color: var(--DarkCyan);
 }
 
+.v_m {
+  opacity: 50%;
+  margin-top: 11px;
+}
+
+.v_m:hover {
+  text-decoration: underline;
+}
+
 .company_bio h5 {
   margin: 0;
 }
@@ -2525,17 +2576,26 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: 1px solid var(--Magnolia);
+  background: var(--Magnolia);
   margin-bottom: 10px;
 }
 
 .p_person .txt_h6 {
   font-size: 16px;
   margin-top: 3px;
-  background: transparent;
+  background: var(--Magnolia);
   border: 0;
   padding: 0;
   font-family: var(--Montserat);
-  height: auto;
+  height: 40px;
+  padding: 7px;
+}
+
+.delete_img {
+  margin-top: 10px;
+  padding-right: 5px;
+  cursor: pointer;
 }
 
 .team_list {
@@ -2549,6 +2609,86 @@ textarea {
   background-color: var(--White);
 }
 
+.each_staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.each_staff:hover {
+  background-color: var(--Magnolia);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.each_staff img {
+  margin-right: 20px;
+}
+
+.each_staff h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+.each_staff .ptz {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
+.each_staff .rank {
+  margin-right: auto;
+}
+
+.mini_h {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.top_scores {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  padding: 30px 16px 16px;
+  border-radius: 5px;
+}
+
+.winner::before {
+  content: url("../svgs/winner.svg");
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.top-guys::before {
+  content: url("../svgs/top_guys.svg");
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.gold path {
+  fill: #fbeb5b;
+}
+
+.staff_scoreboard h5 {
+  font-weight: 500;
+}
+
+.staff_scoreboard h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 @media (min-width: 688px) {
   .ppr button {
     max-width: 214px;
@@ -2558,6 +2698,19 @@ textarea {
   }
   .prime_50 {
     width: 60%;
+  }
+  .p_person {
+    width: 48%;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .d_select {
     display: -webkit-box;
@@ -2708,6 +2861,23 @@ textarea {
   }
   .wrap_name p {
     margin-top: 45px;
+  }
+  .scoreboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .scoreboard .w_40 {
+    width: 47.5%;
+    height: 480px;
+  }
+  .scoreboard .w_60 {
+    width: 50%;
+    margin: 0;
+    margin-bottom: 50px;
   }
 }
 

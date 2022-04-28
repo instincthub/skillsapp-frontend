@@ -239,9 +239,10 @@
     min-height: 400px;
     h3 {
       font-weight: 700;
-      font-size: 25px;
+      font-size: 18px;
       line-height: 22px;
-      margin-top: 30px;
+      margin-top: 9px;
+      margin-bottom: 20px;
     }
     .people_block {
       display: flex;
@@ -386,7 +387,7 @@ div[role="progressbar"]::before {
           margin-right: 5px;
         }
         // &::before {
-        //   content: url("../svgs/users.svg");
+        //   content: url("../svgs/close_icon.svg");
         //   margin-right: 10px;
         //   position: relative;
         //   top: 5px;
@@ -827,7 +828,13 @@ div[role="progressbar"]::before {
     }
   }
 }
-
+.v_m {
+  opacity: 50%;
+  margin-top: 11px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 .company_bio {
   h5 {
     margin: 0;
@@ -943,32 +950,104 @@ textarea {
   display: flex;
   justify-content: space-between;
   // padding: 10px;
-
+  border: 1px solid var(--Magnolia);
+  background: var(--Magnolia);
   margin-bottom: 10px;
   .txt_h6 {
     font-size: 16px;
     margin-top: 3px;
-    // width: 50%;
-    background: transparent;
+    background: var(--Magnolia);
     border: 0;
     padding: 0;
     font-family: var(--Montserat);
-    height: auto;
+    height: 40px;
+    padding: 7px;
   }
+}
+.delete_img {
+  margin-top: 10px;
+  padding-right: 5px;
+  cursor: pointer;
 }
 .team_list {
   min-height: 200px;
   .content {
-    // background-color: yellow;
     font-size: 16px;
     text-align: left;
     font-family: var(--Nunito);
     background-color: var(--White);
   }
 }
+.each_staff {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 0.4s ease;
+  transform: scale(1);
+  &:hover {
+    background-color: var(--Magnolia);
+    transform: scale(1.02);
+  }
+  img {
+    margin-right: 20px;
+  }
+  h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+  .ptz {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 5px;
+  }
+  .rank {
+    margin-right: auto;
+  }
+}
+.mini_h {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.top_scores {
+  box-shadow: var(--shadow);
+  padding: 30px 16px 16px;
+  border-radius: 5px;
+}
+.winner {
+  &::before {
+    content: url("../svgs/winner.svg");
+    margin-right: 15px;
+    margin-top: 3px;
+  }
+}
+.top-guys {
+  &::before {
+    content: url("../svgs/top_guys.svg");
+    margin-right: 15px;
+    margin-top: 3px;
+  }
+}
+.gold {
+  path {
+    fill: #fbeb5b;
+  }
+}
+.staff_scoreboard {
+  // width: 35%;
 
-.remove_this {
-  // transform: translateX(400px);
+  h5 {
+    font-weight: 500;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 @media (min-width: 688px) {
   .ppr {
@@ -981,6 +1060,14 @@ textarea {
   }
   .prime_50 {
     width: 60%;
+  }
+  .p_person {
+    width: 48%;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .d_select {
     display: flex;
@@ -1055,9 +1142,7 @@ textarea {
       height: auto;
       border-radius: 5px 0px 0 5px;
     }
-    .int_txt {
-      // max-width: 355px;
-    }
+
     .outlined-btn {
       width: 30%;
       margin: 0 20px 0 0;
@@ -1094,13 +1179,26 @@ textarea {
   }
   .wrap_name {
     display: flex;
-    // justify-content: space-between;
+
     .company_name {
       width: 45%;
       margin-right: 15px;
     }
     p {
       margin-top: 45px;
+    }
+  }
+  .scoreboard {
+    display: flex;
+    justify-content: space-between;
+    .w_40 {
+      width: 47.5%;
+      height: 480px;
+    }
+    .w_60 {
+      width: 50%;
+      margin: 0;
+      margin-bottom: 50px;
     }
   }
 }
@@ -1110,7 +1208,6 @@ textarea {
     padding: 0 60px;
   }
 }
-
 @media (min-width: 1024px) {
   .contain {
     padding: 0 30px;

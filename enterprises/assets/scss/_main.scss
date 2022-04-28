@@ -197,6 +197,10 @@ h5 {
   font-size: 14px;
   line-height: 16px;
 }
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
 .op-5 {
   opacity: 50%;
 }
@@ -219,6 +223,35 @@ a,
 label,
 ::placeholder {
   font-family: var(--Montserat);
+}
+ol {
+  list-style: none;
+  counter-reset: item;
+
+  li {
+    counter-increment: item;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-family: var(--Nunito);
+    &:before {
+      margin-right: 16px;
+      margin-top: 6px;
+      content: counter(item);
+      background: var(--Gunmetal);
+      border-radius: 100%;
+      color: white;
+      font-weight: 700;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
+.display_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 p,
 span,
