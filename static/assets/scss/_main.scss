@@ -482,6 +482,8 @@ nav {
   li {
   }
   .dropdown {
+    position: relative;
+    top: -7px;
     &:after {
       content: url(https://www.svgrepo.com/show/304563/arrow-down.svg);
       position: relative;
@@ -1292,9 +1294,9 @@ input:valid {
     padding: 0 40px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .container {
-    padding: 0 40px;
+    padding: 0 60px;
   }
 }
 

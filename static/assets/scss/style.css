@@ -618,6 +618,11 @@ nav .navbar img {
       justify-content: space-around;
 }
 
+.navlinks .dropdown {
+  position: relative;
+  top: -7px;
+}
+
 .navlinks .dropdown:after {
   content: url(https://www.svgrepo.com/show/304563/arrow-down.svg);
   position: relative;
@@ -1502,9 +1507,9 @@ input:valid {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .container {
-    padding: 0 40px;
+    padding: 0 60px;
   }
 }
 
@@ -3068,6 +3073,9 @@ textarea {
 @media (max-width: 540px) {
   .main .nav .navigation .bell_avatar {
     width: 47%;
+  }
+  .top_scores {
+    padding: 0;
   }
   .overlay .it_card .it_content {
     padding: 0;
