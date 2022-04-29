@@ -38,7 +38,7 @@
 .editable {
   position: relative;
   top: -50px;
-  img {
+  .staff_dp {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -55,7 +55,38 @@
     }
   }
 }
+.staff_stats {
+  margin-top: 30px;
+  .each_view {
+    background-color: var(--White);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
 
+    margin-bottom: 20px;
+    min-height: 120px;
+    .snip {
+      display: flex;
+      img {
+        width: 40px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        height: 40px;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
 .skills {
   h5 {
     margin: 0;

@@ -1568,7 +1568,7 @@ input:valid {
   top: -50px;
 }
 
-.editable img {
+.editable .staff_dp {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -1587,6 +1587,46 @@ input:valid {
 .editable .staff_contact li {
   margin-right: 30px;
   margin-bottom: 10px;
+}
+
+.staff_stats {
+  margin-top: 30px;
+}
+
+.staff_stats .each_view {
+  background-color: var(--White);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  min-height: 120px;
+}
+
+.staff_stats .each_view .snip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.staff_stats .each_view .snip img {
+  width: 40px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.staff_stats .each_view .snip h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.staff_stats .each_view p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .skills h5 {
