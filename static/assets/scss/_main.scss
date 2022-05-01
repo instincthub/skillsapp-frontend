@@ -534,6 +534,21 @@ ul.breadcrumb li a:hover {
     clear: both;
   }
 }
+#myProgress {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+  height: 8px;
+  background-color: #f4f4f4;
+  #myBar {
+    width: 10%;
+    // height: 30px;
+    border-radius: 4px;
+    height: 8px;
+    background-color: var(--DarkCyan);
+  }
+}
+
 .border-top {
   border-top: 1px solid var(--ChineseSilver);
   margin-bottom: 40px;

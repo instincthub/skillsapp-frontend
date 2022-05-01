@@ -1,4 +1,5 @@
 @import "./main";
+@import "./footer";
 
 :root {
   --DarkCyan: #00838f;
@@ -87,6 +88,7 @@
     }
   }
 }
+
 .skills {
   h5 {
     margin: 0;
@@ -106,8 +108,161 @@
     background-color: var(--Gray);
   }
 }
+
+.progress_stat {
+  padding-top: 40px;
+  h4 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .overview {
+    display: flex;
+    .custom-select {
+      width: 150px;
+    }
+    h3 {
+      margin: 0 auto 0 0;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    select {
+      margin: 0;
+    }
+  }
+}
+
+.staff_stats .each_view .snip h4 {
+  font-size: 20px;
+}
+@mixin card {
+  background-color: var(--White);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.staff_course {
+  .per_course {
+    @include card;
+    .gauge {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .pic_scale {
+      overflow: hidden;
+
+      max-height: 150px;
+      img {
+        transition: 0.7s;
+        border-radius: 5px 5px 0px 0px;
+      }
+    }
+    .desc {
+      padding: 16px;
+      h4 {
+        // font-family: Nunito;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0px;
+        max-height: 83px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        text-align: left;
+      }
+      .instructor {
+        font-family: Nunito;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: left;
+        &::before {
+          content: "Instructor";
+          margin-right: 10px;
+          font-weight: 700;
+        }
+      }
+      .enr {
+        span {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 20px;
+          margin-right: 5px;
+        }
+        // &::before {
+        //   content: url("../svgs/close_icon.svg");
+        //   margin-right: 10px;
+        //   position: relative;
+        //   top: 5px;
+        // }
+      }
+      button {
+        border: 1px solid var(--DarkCyan);
+        background-color: transparent;
+        color: var(--DarkCyan);
+        margin-top: 10px;
+        transition: 0.2s;
+        &:hover {
+          // @include button;
+          background-color: var(--DarkCyan);
+          color: var(--White);
+        }
+      }
+    }
+
+    &:hover {
+      .pic_scale {
+        img {
+          filter: drop-shadow(0px 7px 64px rgba(0, 0, 0, 0.07));
+          border-radius: 5px 5px 0px 0px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 688px) {
   .staff_nav ul {
     display: none;
+  }
+}
+@media (min-width: 688px) {
+  .staff_stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .each_view {
+      width: 48.5%;
+    }
+  }
+
+  .card_parent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .course_cards {
+      width: 48.5%;
+    }
+  }
+}
+@media (min-width: 788px) {
+  .card_parent .course_cards {
+    width: 32.5%;
+  }
+  .staff_stats {
+    .each_view {
+      width: 32.5%;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .staff_stats .each_view {
+    width: 24%;
+  }
+  .card_parent .course_cards {
+    width: 24%;
   }
 }
