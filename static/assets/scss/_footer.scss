@@ -13,16 +13,18 @@ footer {
   background-color: #ffffff;
   // padding-bottom: 20px;s
   .footer_wrap {
-    font-family: var(--Nunito);
   }
   .quick_links {
     padding-top: 30px;
     li {
+      a {
+        font-family: var(--Nunito);
+      }
       transform: scale(1);
       transition: 0.4s;
       margin-bottom: 10px;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.03);
       }
     }
   }
