@@ -33,12 +33,16 @@
   position: relative !important;
   div {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
+    right: 0px;
     input {
-      // display: none;
+      display: none;
     }
     label {
+      padding: 10px;
       background-color: var(--DarkCyan);
+      color: var(--White);
+      font-weight: 600;
     }
   }
   img {

@@ -1737,11 +1737,19 @@ footer ul.breadcrumb li a:hover {
 
 .background_pic div {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
+  right: 0px;
+}
+
+.background_pic div input {
+  display: none;
 }
 
 .background_pic div label {
+  padding: 10px;
   background-color: var(--DarkCyan);
+  color: var(--White);
+  font-weight: 600;
 }
 
 .background_pic img {
