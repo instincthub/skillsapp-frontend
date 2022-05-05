@@ -5,6 +5,7 @@
           box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -3146,6 +3147,9 @@ textarea {
 @media (max-width: 540px) {
   .main .nav .navigation .bell_avatar {
     width: 47%;
+  }
+  .each_staff img {
+    margin-right: 10px;
   }
   .mini_h {
     margin-left: 10px;
