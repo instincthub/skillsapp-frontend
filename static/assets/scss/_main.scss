@@ -231,7 +231,7 @@ ol {
   li {
     counter-increment: item;
     margin-bottom: 5px;
-    margin-right: 10px;
+    // margin-right: 10px;
     font-family: var(--Nunito);
     &:before {
       margin-right: 16px;
@@ -277,6 +277,25 @@ img {
     position: relative;
     top: 5px;
     margin-right: 8px;
+  }
+}
+.ct-series-a .ct-line {
+  stroke: var(--Gunmetal) !important;
+  stroke-width: 2px;
+}
+
+.ct-grids .ct-horizontal {
+  stroke-width: 0px !important;
+  stroke-dasharray: 5px;
+}
+.ct-series-a .ct-point {
+  stroke-linecap: circle;
+  transition: 0.4s;
+  stroke-width: 0px;
+  cursor: pointer;
+  &:hover {
+    stroke: var(--MaximumRedPurple) !important;
+    stroke-width: 15px;
   }
 }
 .b_phone {

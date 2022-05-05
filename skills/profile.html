@@ -35,11 +35,14 @@
     <div class="profile">
       <div class="background_pic">
         <img src="../static/assets/images/course1.jpg" alt="" id="result" />
-        <div class="container">
-          <label for="img_changer">
-            <input type="file" id="img_changer" class="change_img" />Edit
-            cover</label
-          >
+        <div class="container upload_img">
+          <input
+            id="img_changer"
+            type="file"
+            class="change_img"
+            onchange="readFile();"
+          />
+          <label for="img_changer">Edit cover</label>
         </div>
       </div>
 
@@ -148,9 +151,6 @@
                   <div id="myBar"></div>
                 </div>
                 <p class="gauge">10% of course completed</p>
-                <a href="../courses/t_details.html"
-                  ><button class="important-btn">Course Details</button></a
-                >
               </div>
             </div>
             <div class="per_course course_cards">
@@ -171,9 +171,6 @@
                   <div id="myBar"></div>
                 </div>
                 <p class="gauge">10% of course completed</p>
-                <a href="../courses/t_details.html"
-                  ><button class="important-btn">Course Details</button></a
-                >
               </div>
             </div>
             <div class="per_course course_cards">
@@ -194,9 +191,6 @@
                   <div id="myBar"></div>
                 </div>
                 <p class="gauge">10% of course completed</p>
-                <a href="../courses/t_details.html"
-                  ><button class="important-btn">Course Details</button></a
-                >
               </div>
             </div>
             <div class="per_course course_cards">
@@ -217,9 +211,6 @@
                   <div id="myBar"></div>
                 </div>
                 <p class="gauge">10% of course completed</p>
-                <a href="./courses/t_details.html"
-                  ><button class="important-btn">Course Details</button></a
-                >
               </div>
             </div>
           </div>

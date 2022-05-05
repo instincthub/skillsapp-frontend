@@ -1,26 +1,51 @@
-const ctx = document.getElementById("chartContainer").getContext("2d");
-const myChart = new Chart(ctx, {
-  type: "line",
-  data: {
-    labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datasets: [
-      {
-        label: "Total people that learned",
-        data: [16, 10, 5, 13, 24, 30],
-        backgroundColor: ["#fff"],
-        fill: false,
-        lineTension: 0.3,
-        borderColor: [" #00838F"],
-        pointHoverRadius: 0,
-        borderWidth: 4,
-      },
+var data = {
+  labels: ["Mon", "Tues", "Wed", "Thurs", "Fri"],
+  series: [
+    [
+      { x: 10, y: 10 },
+      { x: undefined, y: 30 },
+      { x: undefined, y: 1 },
+      { x: undefined, y: 13 },
+      { x: undefined, y: 7 },
     ],
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true,
+  ],
+};
+
+var responsiveOptions = [
+  [
+    "screen and (min-width: 641px) and (max-width: 1024px)",
+    {
+      seriesBarDistance: 10,
+      axisX: {
+        labelInterpolationFnc: function (value) {
+          return value;
+        },
       },
     },
+  ],
+  [
+    "screen and (max-width: 640px)",
+    {
+      seriesBarDistance: 5,
+      axisX: {
+        labelInterpolationFnc: function (value) {
+          return value[0];
+        },
+      },
+    },
+  ],
+];
+var options = {
+  axisY: {
+    labelInterpolationFnc: function (series) {
+      // when the floored value is the same as the value we have a whole number
+      if (Math.floor(series) === series) {
+        return series;
+      }
+    },
   },
-});
+};
+new Chartist.Line(".ct-chart", data, responsiveOptions, options);
+
+let foregnObj = document.querySelectorAll(".ct-label");
+console.log(foregnObj);

@@ -262,7 +262,6 @@ ol {
 ol li {
   counter-increment: item;
   margin-bottom: 5px;
-  margin-right: 10px;
   font-family: var(--Nunito);
 }
 
@@ -320,6 +319,29 @@ img {
   position: relative;
   top: 5px;
   margin-right: 8px;
+}
+
+.ct-series-a .ct-line {
+  stroke: var(--Gunmetal) !important;
+  stroke-width: 2px;
+}
+
+.ct-grids .ct-horizontal {
+  stroke-width: 0px !important;
+  stroke-dasharray: 5px;
+}
+
+.ct-series-a .ct-point {
+  stroke-linecap: circle;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  stroke-width: 0px;
+  cursor: pointer;
+}
+
+.ct-series-a .ct-point:hover {
+  stroke: var(--MaximumRedPurple) !important;
+  stroke-width: 15px;
 }
 
 .b_phone::before {
@@ -3125,8 +3147,11 @@ textarea {
   .main .nav .navigation .bell_avatar {
     width: 47%;
   }
+  .mini_h {
+    margin-left: 10px;
+  }
   .top_scores {
-    padding: 0;
+    padding: 30px 10px 10px;
   }
   .overlay .it_card .it_content {
     padding: 0;

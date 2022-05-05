@@ -1,18 +1,18 @@
-// function readFile() {
-//   var reader = new FileReader();
-//   var file = document.querySelector("#img_changer").files[0];
+function readFile() {
+  var reader = new FileReader();
+  var file = document.querySelector("#img_changer").files[0];
 
-//   reader.onload = function (e) {
-//     document.querySelector("#result").src = e.target.result;
-//   };
-//   reader.readAsDataURL(file);
+  reader.onload = function (e) {
+    document.querySelector("#result").src = e.target.result;
+  };
+  reader.readAsDataURL(file);
 
-//   if (files[0].size > 2097152) {
-//     alert("File is too big!");
+  if (files[0].size > 2097152) {
+    alert("File is too big!");
 
-//     this.value = "";
-//   }
-// }
+    this.value = "";
+  }
+}
 
 // =============Add this two events on your INPUT file to upload image
 

@@ -262,7 +262,6 @@ ol {
 ol li {
   counter-increment: item;
   margin-bottom: 5px;
-  margin-right: 10px;
   font-family: var(--Nunito);
 }
 
@@ -320,6 +319,29 @@ img {
   position: relative;
   top: 5px;
   margin-right: 8px;
+}
+
+.ct-series-a .ct-line {
+  stroke: var(--Gunmetal) !important;
+  stroke-width: 2px;
+}
+
+.ct-grids .ct-horizontal {
+  stroke-width: 0px !important;
+  stroke-dasharray: 5px;
+}
+
+.ct-series-a .ct-point {
+  stroke-linecap: circle;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  stroke-width: 0px;
+  cursor: pointer;
+}
+
+.ct-series-a .ct-point:hover {
+  stroke: var(--MaximumRedPurple) !important;
+  stroke-width: 15px;
 }
 
 .b_phone::before {
@@ -1735,21 +1757,32 @@ footer ul.breadcrumb li a:hover {
   position: relative !important;
 }
 
-.background_pic div {
+.background_pic .upload_img {
   position: absolute;
   bottom: 30px;
+  cursor: pointer;
   right: 0px;
 }
 
-.background_pic div input {
+.background_pic .upload_img input {
   display: none;
 }
 
-.background_pic div label {
-  padding: 10px;
+.background_pic .upload_img label {
+  padding: 10px 20px;
+  font-family: var(--Nunito);
   background-color: var(--DarkCyan);
   color: var(--White);
   font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.background_pic .upload_img label:before {
+  content: url("../svgs/camera.svg");
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
 }
 
 .background_pic img {
@@ -1891,6 +1924,10 @@ footer ul.breadcrumb li a:hover {
   line-height: 18px;
 }
 
+.staff_course .per_course h5 {
+  margin-bottom: 6px;
+}
+
 .staff_course .per_course .pic_scale {
   overflow: hidden;
   max-height: 150px;
@@ -1912,14 +1949,14 @@ footer ul.breadcrumb li a:hover {
   line-height: 26px;
   letter-spacing: 0px;
   max-height: 83px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   overflow: hidden;
   text-align: left;
 }
 
 .staff_course .per_course .desc .instructor {
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0px;
