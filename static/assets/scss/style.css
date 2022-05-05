@@ -1960,6 +1960,7 @@ div[role="progressbar"]::before {
   width: 100%;
   font-size: 16px;
   opacity: 0.6;
+  margin-top: 15px;
 }
 
 .heading {
@@ -2002,14 +2003,14 @@ div[role="progressbar"]::before {
   line-height: 26px;
   letter-spacing: 0px;
   max-height: 83px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   overflow: hidden;
   text-align: left;
 }
 
 .e_course .per_course .desc .instructor {
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0px;
@@ -2017,9 +2018,9 @@ div[role="progressbar"]::before {
 }
 
 .e_course .per_course .desc .instructor::before {
-  content: "By";
+  content: "Instructor";
   margin-right: 10px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .e_course .per_course .desc .enr span {
@@ -2042,6 +2043,11 @@ div[role="progressbar"]::before {
 .e_course .per_course .desc button:hover {
   background-color: var(--DarkCyan);
   color: var(--White);
+}
+
+.e_course .per_course .enr {
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .e_course .per_course:hover .pic_scale img {
