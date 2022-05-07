@@ -1225,8 +1225,7 @@ textarea {
     display: flex;
     justify-content: center;
     padding: 25px;
-    .it_content {
-    }
+
     .it_card {
       top: 18%;
       width: 90%;
@@ -1382,6 +1381,9 @@ textarea {
 @media (max-width: 540px) {
   .main .nav .navigation .bell_avatar {
     width: 47%;
+  }
+  .chart_list .chart .spin h3 {
+    font-size: 16px;
   }
   .each_staff img {
     margin-right: 10px;

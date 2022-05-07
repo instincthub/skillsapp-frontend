@@ -336,12 +336,12 @@ img {
   stroke-linecap: circle;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  stroke-width: 0px;
+  stroke-width: 10px;
+  stroke: var(--MaximumRedPurple) !important;
   cursor: pointer;
 }
 
 .ct-series-a .ct-point:hover {
-  stroke: var(--MaximumRedPurple) !important;
   stroke-width: 15px;
 }
 
@@ -3153,6 +3153,9 @@ textarea {
 @media (max-width: 540px) {
   .main .nav .navigation .bell_avatar {
     width: 47%;
+  }
+  .chart_list .chart .spin h3 {
+    font-size: 16px;
   }
   .each_staff img {
     margin-right: 10px;

@@ -292,10 +292,10 @@ img {
 .ct-series-a .ct-point {
   stroke-linecap: circle;
   transition: 0.4s;
-  stroke-width: 0px;
+  stroke-width: 10px;
+  stroke: var(--MaximumRedPurple) !important;
   cursor: pointer;
   &:hover {
-    stroke: var(--MaximumRedPurple) !important;
     stroke-width: 15px;
   }
 }
@@ -539,8 +539,7 @@ nav {
 .navlinks {
   display: flex;
   justify-content: space-around;
-  li {
-  }
+
   .dropdown {
     position: relative;
     top: -7px;
