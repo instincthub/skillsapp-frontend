@@ -689,6 +689,11 @@ nav .navbar img {
   margin-left: 5px;
 }
 
+.track {
+  color: var(--DarkCyan);
+  border-bottom: 3px solid var(--DarkCyan);
+}
+
 .hamburger {
   margin-top: 10px;
   margin-right: 20px;

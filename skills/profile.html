@@ -23,9 +23,9 @@
       <nav class="container staff_nav">
         <img src="../static/assets/images/instinctHub.svg" alt="" />
         <ul class="navlinks">
-          <li><a href="" class="dropdown">Dropdown</a></li>
+          <li><a href="" class="dropdown">Courses</a></li>
           <li><a href="">Pricing</a></li>
-          <li><a href="">Bootcamp</a></li>
+          <li class="track"><a href="">Tracks</a></li>
           <li><a href="">Scoreboard</a></li>
           <li><a href="">Forum</a></li>
         </ul>
@@ -84,9 +84,22 @@
           <h4>Statistics</h4>
 
           <div class="staff_stats">
-            <div class="each_view">
+            <div class="each_view active_state">
               <div class="snip">
-                <img src="../static/assets/svgs/taken.svg" alt="user's svg" />
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.8">
+                    <path
+                      d="M27.5013 1.66602H7.5013C5.66797 1.66602 4.16797 3.16602 4.16797 4.99935V28.3327H7.5013V4.99935H27.5013V1.66602ZM32.5013 8.33268H14.168C12.3346 8.33268 10.8346 9.83268 10.8346 11.666V34.9993C10.8346 36.8327 12.3346 38.3327 14.168 38.3327H32.5013C34.3346 38.3327 35.8346 36.8327 35.8346 34.9993V11.666C35.8346 9.83268 34.3346 8.33268 32.5013 8.33268ZM32.5013 34.9993H14.168V11.666H32.5013V34.9993Z"
+                      fill="#00838F"
+                    />
+                  </g>
+                </svg>
                 <h4>13</h4>
               </div>
               <p>Courses Taken</p>
@@ -99,12 +112,15 @@
                 />
                 <h4>5h 10m</h4>
               </div>
-              <p>Watch Hour</p>
+              <p>Study Time</p>
             </div>
             <div class="each_view">
               <div class="snip">
-                <img src="../static/assets/svgs/user.svg" alt="user's svg" />
-                <h4>500</h4>
+                <img
+                  src="../static/assets/svgs/rewardpts.svg"
+                  alt="user's svg"
+                />
+                <h4>500 pts</h4>
               </div>
               <p>Total Points</p>
             </div>
@@ -112,7 +128,7 @@
             <div class="each_view">
               <div class="snip">
                 <img
-                  src="../static/assets/svgs/complete.svg"
+                  src="../static/assets/svgs/last_login.svg"
                   alt="user's svg"
                 />
                 <h4>1 day, 3 Mins</h4>

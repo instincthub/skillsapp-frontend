@@ -689,6 +689,11 @@ nav .navbar img {
   margin-left: 5px;
 }
 
+.track {
+  color: var(--DarkCyan);
+  border-bottom: 3px solid var(--DarkCyan);
+}
+
 .hamburger {
   margin-top: 10px;
   margin-right: 20px;
@@ -1875,6 +1880,27 @@ footer ul.breadcrumb li a:hover {
   margin-top: 15px;
   line-height: 19px;
   background-color: var(--Gray);
+}
+
+.active_state {
+  background-color: var(--DarkCyan) !important;
+}
+
+.active_state .snip svg {
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.active_state .snip svg path {
+  fill: var(--White);
+}
+
+.active_state .snip h4 {
+  color: var(--White);
+}
+
+.active_state p {
+  color: var(--White);
 }
 
 .progress_stat {

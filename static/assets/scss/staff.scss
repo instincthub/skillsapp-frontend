@@ -133,7 +133,24 @@
     background-color: var(--Gray);
   }
 }
-
+.active_state {
+  background-color: var(--DarkCyan) !important;
+  .snip {
+    svg {
+      margin-right: auto;
+      margin-bottom: 20px;
+      path {
+        fill: var(--White);
+      }
+    }
+    h4 {
+      color: var(--White);
+    }
+  }
+  p {
+    color: var(--White);
+  }
+}
 .progress_stat {
   padding-top: 40px;
   h4 {
