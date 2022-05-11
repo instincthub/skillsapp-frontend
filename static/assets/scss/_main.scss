@@ -295,10 +295,16 @@ img {
   stroke-width: 10px;
   stroke: var(--MaximumRedPurple) !important;
   cursor: pointer;
+  &::before {
+    content: "Hello";
+    color: #009ba2;
+  }
   &:hover {
     stroke-width: 15px;
+    stroke: var(--ChineseBlue) !important;
   }
 }
+
 .b_phone {
   &::before {
     content: url("../svgs/phone.svg");
@@ -520,7 +526,7 @@ button {
   color: var(--White);
 }
 nav {
-  height: 60px;
+  height: 80px;
   padding: 18px 0;
   background-color: var(--White);
   position: fixed;
@@ -539,17 +545,17 @@ nav {
 .navlinks {
   display: flex;
   justify-content: space-around;
-
-  .dropdown {
-    position: relative;
-    top: -7px;
-    &:after {
-      content: url(https://www.svgrepo.com/show/304563/arrow-down.svg);
-      position: relative;
-      top: 7px;
-      margin-left: 5px;
-    }
-  }
+  height: 50px;
+  // .dropdown {
+  //   position: relative;
+  //   top: -7px;
+  //   &:after {
+  //     content: url(https://www.svgrepo.com/show/304563/arrow-down.svg);
+  //     position: relative;
+  //     top: 7px;
+  //     margin-left: 5px;
+  //   }
+  // }
 }
 .track {
   color: var(--DarkCyan);

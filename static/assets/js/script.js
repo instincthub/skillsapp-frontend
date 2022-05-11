@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
 
     const deleteTeam = document.createElement("img");
     deleteTeam.classList.add("delete_img");
-    deleteTeam.src = "../assets/svgs/close_icon.svg";
+    deleteTeam.src = "../../static/assets/svgs/close_icon.svg";
     action.appendChild(deleteTeam);
 
     deleteTeam.addEventListener("click", () => {

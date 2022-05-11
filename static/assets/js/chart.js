@@ -47,5 +47,7 @@ var options = {
 };
 new Chartist.Line(".ct-chart", data, responsiveOptions, options);
 
-let foregnObj = document.querySelectorAll(".ct-label");
-console.log(foregnObj);
+// let foregnObj = document.querySelectorAll(".ct-label");
+// console.log(foregnObj);
+
+// toolTipContent: "{x} </br> <strong>Temperature: </strong> </br> Min: {y[0]} °C, Max: {y[1]} °C",

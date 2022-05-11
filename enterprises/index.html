@@ -229,7 +229,9 @@
                   </select>
                 </div>
               </div>
-              <div class="ct-chart ct-major-twelfth mt-2"></div>
+              <div class="ct-chart ct-major-twelfth mt-2">
+                
+              </div>
               <p class="mt-2">
                 <b>Note:</b>Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Expedita, obcaecati. Temporibus eveniet esse, est dolorem
@@ -356,5 +358,20 @@
     <script src="../static/assets/js/chart.js"></script>
     <script src="../static/assets/js/search.js"></script>
     <script src="../static/assets/js/select.js"></script>
+    <script>
+      // const eachDots = document.querySelector(".ct-point");
+
+      // eachDots.addEventListener("click", () => {
+      //   alert("Hello dear");
+      // });
+      document.addEventListener("DOMContentLoaded", function () {
+        const dataValue = document.querySelectorAll(".ct-point");
+        const dataValue2 = document.querySelector(".ct-chart-line");
+        console.log(dataValue2);
+        // dataValue.forEach((e) => {
+        //   console.log(e.target.attributes[5].value);
+        // });
+      });
+    </script>
   </body>
 </html>

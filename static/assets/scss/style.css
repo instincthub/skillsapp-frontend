@@ -341,8 +341,14 @@ img {
   cursor: pointer;
 }
 
+.ct-series-a .ct-point::before {
+  content: "Hello";
+  color: #009ba2;
+}
+
 .ct-series-a .ct-point:hover {
   stroke-width: 15px;
+  stroke: var(--ChineseBlue) !important;
 }
 
 .b_phone::before {
@@ -651,7 +657,7 @@ button:disabled {
 }
 
 nav {
-  height: 60px;
+  height: 80px;
   padding: 18px 0;
   background-color: var(--White);
   position: fixed;
@@ -675,18 +681,7 @@ nav .navbar img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.navlinks .dropdown {
-  position: relative;
-  top: -7px;
-}
-
-.navlinks .dropdown:after {
-  content: url(https://www.svgrepo.com/show/304563/arrow-down.svg);
-  position: relative;
-  top: 7px;
-  margin-left: 5px;
+  height: 50px;
 }
 
 .track {
