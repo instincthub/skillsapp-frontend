@@ -298,6 +298,7 @@
   top: -7px;
   background-color: var(--White);
   cursor: pointer;
+  transition: 0.2s;
   &:after {
     content: url(https://www.svgrepo.com/show/304563/arrow-down.svg);
     position: relative;
@@ -325,6 +326,9 @@
     left: 0;
     // max-width: 375px;
     width: 100%;
+  }
+  .profile_dp {
+    display: none;
   }
   .navlinks li {
     padding: 14px 16px;
@@ -386,8 +390,8 @@
   .mini_menu {
     background-color: var(--White);
     position: absolute;
-    top: -50px;
-    z-index: -1;
+    top: -55px;
+    // z-index: -1;
     left: 30%;
     padding-top: 30px;
     a {

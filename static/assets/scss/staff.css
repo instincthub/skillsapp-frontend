@@ -2058,6 +2058,8 @@ footer ul.breadcrumb li a:hover {
   top: -7px;
   background-color: var(--White);
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .dropdown:after {
@@ -2091,6 +2093,9 @@ footer ul.breadcrumb li a:hover {
     height: auto;
     left: 0;
     width: 100%;
+  }
+  .profile_dp {
+    display: none;
   }
   .navlinks li {
     padding: 14px 16px;
@@ -2159,8 +2164,7 @@ footer ul.breadcrumb li a:hover {
   .mini_menu {
     background-color: var(--White);
     position: absolute;
-    top: -50px;
-    z-index: -1;
+    top: -55px;
     left: 30%;
     padding-top: 30px;
   }
