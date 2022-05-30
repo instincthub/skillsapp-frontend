@@ -1607,6 +1607,8 @@ footer {
           box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.05), 0px 2px 8px rgba(0, 0, 0, 0.05);
   height: auto;
   background-color: #ffffff;
+  z-index: 10;
+  position: relative;
 }
 
 footer .quick_links {
@@ -1732,6 +1734,25 @@ footer ul.breadcrumb li a:hover {
   --Montserat: "Montserrat", sans-serif;
   --overlay: rgba(44, 51, 58, 0.2);
   --shadow: 0px -2px 8px rgba(0, 0, 0, 0.05), 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  height: 80px;
+  background-color: var(--White);
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  top: 0;
+}
+
+header nav {
+  left: 50%;
+  position: static;
+  background-color: var(--White);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .staff_nav {
@@ -1958,6 +1979,77 @@ footer ul.breadcrumb li a:hover {
   font-size: 20px;
 }
 
+.checkbox_parent .checkbox {
+  display: block;
+  font-family: var(--Nunito);
+  position: relative;
+  padding-left: 40px;
+  margin-top: 20px;
+  padding-top: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  border-radius: 5px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox_parent .checkbox p {
+  opacity: 50%;
+}
+
+.checkbox_parent .checkbox input {
+  position: absolute;
+  width: auto;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkbox_parent .checkbox input:checked ~ .checkmark {
+  background-color: var(--DarkCyan);
+}
+
+.checkbox_parent .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox_parent .checkbox input:disabled ~ .checkmark {
+  background-color: var(--ChineseSilver);
+}
+
+.checkbox_parent .checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  left: 0;
+  border-radius: 5px;
+  height: 25px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  width: 25px;
+  border: 1px solid #00838f;
+}
+
+.checkbox_parent .checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .staff_course .per_course {
   background-color: var(--White);
   -webkit-box-shadow: var(--shadow);
@@ -1989,6 +2081,7 @@ footer ul.breadcrumb li a:hover {
 
 .staff_course .per_course .desc {
   padding: 16px;
+  position: relative;
 }
 
 .staff_course .per_course .desc h4 {
@@ -2009,12 +2102,27 @@ footer ul.breadcrumb li a:hover {
   line-height: 19px;
   letter-spacing: 0px;
   text-align: left;
+  margin-bottom: 25px;
 }
 
 .staff_course .per_course .desc .instructor::before {
-  content: "Instructor";
+  content: "Instructor:";
   margin-right: 10px;
   font-weight: 700;
+}
+
+.staff_course .per_course .desc .rating {
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.staff_course .per_course .desc .rating::before {
+  content: url("../svgs/gold.svg");
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
 }
 
 .staff_course .per_course .desc .enr span {
@@ -2053,6 +2161,10 @@ footer ul.breadcrumb li a:hover {
   display: block;
 }
 
+.mini_menu.active + .dropdown {
+  display: none;
+}
+
 .dropdown {
   position: relative;
   top: -7px;
@@ -2060,6 +2172,7 @@ footer ul.breadcrumb li a:hover {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  padding: 20px 0;
 }
 
 .dropdown:after {
@@ -2073,6 +2186,7 @@ footer ul.breadcrumb li a:hover {
   .navlinks li {
     padding: 14px 16px;
     margin: 0;
+    opacity: 0;
     border-bottom: 1px solid rgba(44, 51, 58, 0.214);
   }
 }
@@ -2239,8 +2353,8 @@ footer ul.breadcrumb li a:hover {
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
   to {
     opacity: 1;
@@ -2252,8 +2366,8 @@ footer ul.breadcrumb li a:hover {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
   to {
     opacity: 1;

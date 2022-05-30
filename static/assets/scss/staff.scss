@@ -14,7 +14,21 @@
   --overlay: rgba(44, 51, 58, 0.2);
   --shadow: 0px -2px 8px rgba(0, 0, 0, 0.05), 0px 2px 8px rgba(0, 0, 0, 0.05);
 }
-
+header {
+  box-shadow: var(--shadow);
+  height: 80px;
+  background-color: var(--White);
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  top: 0;
+  nav {
+    left: 50%;
+    position: static;
+    background-color: var(--White);
+    box-shadow: none;
+  }
+}
 .staff_nav {
   display: flex;
   img {
@@ -196,6 +210,75 @@
 .staff_stats .each_view .snip h4 {
   font-size: 20px;
 }
+
+.checkbox_parent {
+  .checkbox {
+    display: block;
+    font-family: var(--Nunito);
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+    padding-top: 10px;
+    transition: 0.2s;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-user-select: none;
+    border-radius: 5px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    p {
+      opacity: 50%;
+    }
+    input {
+      position: absolute;
+      width: auto;
+      transition: 0.2s ease;
+      opacity: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      &:checked ~ .checkmark {
+        background-color: var(--DarkCyan);
+        &:after {
+          display: block;
+        }
+      }
+      &:disabled ~ .checkmark {
+        background-color: var(--ChineseSilver);
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+      left: 0;
+      border-radius: 5px;
+      height: 25px;
+      transition: 0.2s ease;
+      width: 25px;
+      // background-color: #f4f3fe;
+      border: 1px solid #00838f;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 9px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        // border-radius: 5px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    // &:hover input ~ .checkmark {
+    //   border: 1px solid var(--DarkCyan);
+    // }
+  }
+}
 @mixin card {
   background-color: var(--White);
   box-shadow: var(--shadow);
@@ -223,6 +306,7 @@
     }
     .desc {
       padding: 16px;
+      position: relative;
       h4 {
         // font-family: Nunito;
         font-size: 18px;
@@ -241,10 +325,23 @@
         line-height: 19px;
         letter-spacing: 0px;
         text-align: left;
+        margin-bottom: 25px;
         &::before {
-          content: "Instructor";
+          content: "Instructor:";
           margin-right: 10px;
           font-weight: 700;
+        }
+      }
+      .rating {
+        font-size: 14px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        &::before {
+          content: url("../svgs/gold.svg");
+          margin-right: 5px;
+          position: relative;
+          top: 7px;
         }
       }
       .enr {
@@ -292,6 +389,9 @@
 }
 .mini_menu.active {
   display: block;
+  & + .dropdown {
+    display: none;
+  }
 }
 .dropdown {
   position: relative;
@@ -299,6 +399,7 @@
   background-color: var(--White);
   cursor: pointer;
   transition: 0.2s;
+  padding: 20px 0;
   &:after {
     content: url(https://www.svgrepo.com/show/304563/arrow-down.svg);
     position: relative;
@@ -314,6 +415,7 @@
   .navlinks li {
     padding: 14px 16px;
     margin: 0;
+    opacity: 0;
     border-bottom: 1px solid rgba(44, 51, 58, 0.214);
   }
 }
@@ -467,7 +569,7 @@
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(-50px);
   }
   to {
     opacity: 1;

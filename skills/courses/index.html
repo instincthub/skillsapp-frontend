@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../static/assets/images/instincthub-thumnail.png"
+    />
+    <title>Course Library - Instincthub</title>
+    <link rel="stylesheet" href="../../static/assets/scss/staff.css" />
+    <link rel="stylesheet" href="../../static/assets/scss/course.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="staff_nav container">
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <img src="../../static/assets/images/instinctHub.svg" alt="" />
+        <ul class="navlinks vet">
+          <li>
+            <a
+              class="dropdown"
+              onmouseenter="showDrop()"
+              onmouseleave="removeDrop()"
+              >Courses</a
+            >
+            <div class="mini_menu slide-bottom">
+              <a href="" class="track">Courses Library</a>
+              <a href="">My Courses</a>
+            </div>
+          </li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Tracks</a></li>
+          <li><a href="">Scoreboard</a></li>
+          <li><a href="">Forum</a></li>
+        </ul>
+
+        <div class="skill_profile">
+          <div class="d_not_bell">
+            <img src="../../static/assets/svgs/note_bell.svg" alt="bell" />
+          </div>
+          <div class="profile_dp">
+            <img src="../../static/assets/svgs/avatar.png" alt="avater" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="welcome_banner">
+      <div class="welcome_txt container">
+        <h2>Welcome to Course Library</h2>
+        <p>
+          This is a complete catelog of all the content we offer. Explore
+          courses that are organized into paths, Sort by skill level,
+          instructors, duration or Courses
+        </p>
+      </div>
+    </div>
+
+    <section class="basement">
+      <div class="aside_nav">
+        <div class="aside_navigation">
+          <div class="ff_nav">
+            <div class="ff_heading">
+              <h3>Filter</h3>
+              <div class="search_parent search">
+                <input
+                  type="search"
+                  placeholder="Search here..."
+                  id="tableEvents"
+                  onkeyup="tableAttendee()"
+                />
+                <img
+                  src="https://www.svgrepo.com/show/14071/search.svg"
+                  alt="search-icon"
+                  class="search_page c_p"
+                />
+              </div>
+            </div>
+            <!-- COURSES OFFERED -->
+            <div class="course_basement">
+              <div class="c_snip">
+                <h5>Courses</h5>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >All Courses
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >HTML
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <!-- Sub Courses -->
+                <div class="under_this">
+                  <div class="checkbox_parent">
+                    <label class="checkbox"
+                      >Label
+
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="checkbox_parent">
+                    <label class="checkbox"
+                      >CSS Variables
+
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SKILLS LEVEL -->
+              <div class="c_snip">
+                <h5>Skills level</h5>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Beginner
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Intermediate
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Advance
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- INSTRUCTORS -->
+              <div class="c_snip">
+                <h5>Instructor</h5>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Makinde
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Noah
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Damilola
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Victoria
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Duration -->
+              <div class="c_snip">
+                <h5>Duration</h5>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Less than 5mins
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Less than 20mins
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="checkbox_parent">
+                  <label class="checkbox"
+                    >Less than 20mins
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Library Itself -->
+      <div
+        class="libary container mt-4"
+        style="max-width: 1200px; padding: 0 20px"
+      >
+        <h4>All courses</h4>
+
+        <div class="card_sack">
+          <div class="staff_course mt-4 card_parent">
+            <div class="per_course course_cards">
+              <div class="pic_scale">
+                <img
+                  src="https://www.kindpng.com/picc/m/145-1455685_long-island-web-design-web-development-graphic-png.png"
+                />
+              </div>
+              <div class="desc">
+                <h4>Web Development Crash Course for Absolute Begineer A-Z</h4>
+
+                <h5 class="instructor">Makinde Sodiq</h5>
+                <p>Module 1 of 5</p>
+                <h5 class="rating">(4.2)</h5>
+                <!-- <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+                <p class="gauge">10% of course completed</p> -->
+              </div>
+            </div>
+            <div class="per_course course_cards">
+              <div class="pic_scale">
+                <img
+                  src="https://www.kindpng.com/picc/m/124-1247377_website-development-auckland-web-development-png-images-hd.png"
+                  alt=""
+                />
+              </div>
+              <div class="desc">
+                <h4>
+                  How to build a modern Portfolio website with
+                  HTML,CSS,Javascript form start to finish
+                </h4>
+
+                <h5 class="instructor">Makinde Sodiq</h5>
+                <p>Module 1 of 5</p>
+                <h5 class="rating">(5.0)</h5>
+                <!-- <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+                <p class="gauge">10% of course completed</p> -->
+              </div>
+            </div>
+            <div class="per_course course_cards">
+              <div class="pic_scale">
+                <img
+                  src="https://www.kindpng.com/picc/m/124-1247526_best-software-company-in-delhi-web-redesign-hd.png"
+                  alt=""
+                />
+              </div>
+              <div class="desc">
+                <h4>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                  maiores ipsa, nisi omnis laborum eos voluptatum, nihil, animi
+                  accusantium ea eligendi officiis vitae perferendis amet?
+                  Cupiditate illo tempora quod ratione.
+                </h4>
+
+                <h5 class="instructor">Makinde Sodiq</h5>
+                <p>Module 1 of 5</p>
+                <h5 class="rating">(3.4)</h5>
+                <!-- <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+                <p class="gauge">10% of course completed</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===========
+        FOOTER
+        ======== -->
+    <footer>
+      <div class="footer_wrap container">
+        <div class="quick_links">
+          <ul>
+            <h5>Instincthub</h5>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Tech Diversity</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="quick_links">
+          <ul>
+            <h5>Courses</h5>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">Javascript</a></li>
+            <li><a href="">Python</a></li>
+            <li><a href="">Php</a></li>
+            <li><a href="">Git</a></li>
+          </ul>
+        </div>
+        <div class="quick_links">
+          <ul>
+            <h5>Categories</h5>
+            <li><a href="">Privacy and policy</a></li>
+            <li><a href="">Terms & Condition</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="quick_links">
+          <ul>
+            <h5>Contact us</h5>
+            <li class="b_location">
+              <a href="">58 Ilupeju Street, Dolphin Estate, Ikoyi, Lagos</a>
+            </li>
+            <li class="b_phone"><a href="">(+234) 816 288 0409</a></li>
+            <li class="b_email"><a href="">info@instincthub.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Social Media -->
+      <div class="social_media container">
+        <div class="media">
+          <a href=""
+            ><img src="../../static/assets/svgs/whatsapp.svg" alt="whatsapp"
+          /></a>
+          <a href=""
+            ><img src="../../static/assets/svgs/twitter.svg" alt="twitter"
+          /></a>
+          <a href=""
+            ><img src="../../static/assets/svgs/facebook.svg" alt="facebook"
+          /></a>
+          <a href=""
+            ><img src="../../static/assets/svgs/ig.svg" alt="Instagram"
+          /></a>
+          <a href=""
+            ><img src="../../static/assets/svgs/linkedin.svg" alt="Linkedin"
+          /></a>
+        </div>
+        <ul class="breadcrumb">
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <h5>© 2021 Instinct Hub Techsavvy</h5>
+      </div>
+    </footer>
+  </body>
+
+  <script src="../../static/assets/js/select.js"></script>
+  <script src="../../static/assets/js/upload.js"></script>
+  <script src="../../static/assets/js/nav.js"></script>
+</html>

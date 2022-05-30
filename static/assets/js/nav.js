@@ -4,6 +4,26 @@ const miniMenu = document.querySelector(".mini_menu");
 dropDown.addEventListener("click", () => {
   miniMenu.classList.toggle("active");
 });
+// dropDown.addEventListener("onmouseenter", () => {
+//   miniMenu.classList.add("active");
+//   alert("hey");
+//   dropDown.addEventListener("onmouseleave", () => {
+//     miniMenu.classList.remove("active");
+//   });
+// });
+// miniMenu.addEventListener("mouseover", () => {
+//   miniMenu.classList.add("active");
+//   miniMenu.addEventListener("mouseout", () => {
+//     miniMenu.classList.remove("active");
+//   });
+// });
+
+// function showDrop() {
+//   document.querySelector(".mini_menu").style.display = "block";
+// }
+// function removeDrop() {
+//   document.querySelector(".mini_menu").style.display = "none";
+// }
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".navlinks");
