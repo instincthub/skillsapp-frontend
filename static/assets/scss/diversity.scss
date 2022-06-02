@@ -41,13 +41,9 @@
 
 .pic_grid {
   grid-auto-rows: 400px;
-  .grid_pic {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    img {
-      object-fit: cover;
-    }
+  img {
+    object-fit: cover;
+    border-radius: 10px;
   }
   .column {
     grid-column: span 2;
@@ -65,7 +61,7 @@
     margin-top: 11px;
   }
   img {
-    width: 120px;
+    width: 100px;
   }
 }
 
@@ -195,6 +191,11 @@
       line-height: 30px;
       margin-bottom: 10px;
       letter-spacing: 0.02em;
+    }
+    .gold {
+      path {
+        fill: #ffc107;
+      }
     }
     h4 {
       font-weight: 600;
@@ -389,6 +390,9 @@
   .diversity_banner .frace h2 {
     font-size: 35px;
   }
+  .video_frame iframe {
+    min-height: 300px;
+  }
 }
 @media (max-width: 550px) {
   .pic_grid {
@@ -426,6 +430,11 @@
   }
 }
 
+@media (max-width: 850px) {
+  .pic_grid {
+    margin-top: 50px;
+  }
+}
 @media (min-width: 850px) {
   .diversity_banner {
     display: flex;

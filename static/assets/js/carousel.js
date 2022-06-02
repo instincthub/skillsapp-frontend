@@ -18,8 +18,5 @@ $(".cell_box").owlCarousel({
     650: {
       items: 2,
     },
-    // 1024: {
-    //   items: 3,
-    // },
   },
 });

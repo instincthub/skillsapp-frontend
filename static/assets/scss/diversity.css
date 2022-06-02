@@ -43,17 +43,10 @@
   grid-auto-rows: 400px;
 }
 
-.pic_grid .grid_pic {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-}
-
-.pic_grid .grid_pic img {
+.pic_grid img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 .pic_grid .column {
@@ -77,7 +70,7 @@
 }
 
 .bysterling img {
-  width: 120px;
+  width: 100px;
 }
 
 .cyrac {
@@ -239,6 +232,10 @@
   line-height: 30px;
   margin-bottom: 10px;
   letter-spacing: 0.02em;
+}
+
+.carousel_box .card_name .gold path {
+  fill: #ffc107;
 }
 
 .carousel_box .card_name h4 {
@@ -453,6 +450,9 @@
   .diversity_banner .frace h2 {
     font-size: 35px;
   }
+  .video_frame iframe {
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -493,6 +493,12 @@
   .gin {
     top: 0;
     left: 40%;
+  }
+}
+
+@media (max-width: 850px) {
+  .pic_grid {
+    margin-top: 50px;
   }
 }
 
