@@ -450,6 +450,15 @@
   .diversity_banner .frace h2 {
     font-size: 35px;
   }
+  .blog_nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .burger {
+    margin-right: 0;
+  }
   .video_frame iframe {
     min-height: 300px;
   }
@@ -492,6 +501,7 @@
   }
   .gin {
     top: 0;
+    position: absolute !important;
     left: 40%;
   }
 }
