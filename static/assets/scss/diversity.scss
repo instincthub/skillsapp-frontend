@@ -13,7 +13,7 @@
 }
 
 .diversity_banner {
-  margin-top: 120px;
+  margin-top: 150px;
 
   .frace {
     h2 {
@@ -40,29 +40,20 @@
 }
 
 .pic_grid {
+  grid-auto-rows: 400px;
   .grid_pic {
     display: grid;
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     img {
       object-fit: cover;
     }
-
-    .item1 {
-      grid-column: 1 / span 2;
-    }
-    .item2 {
-      grid-column: 3;
-      grid-row: 1 / span 2;
-    }
-    .item3 {
-      grid-column: 1;
-      grid-row: 2;
-    }
-    .item4 {
-      grid-column: 2;
-      grid-row: 2;
-    }
+  }
+  .column {
+    grid-column: span 2;
+  }
+  .row {
+    grid-row: span 2;
   }
 }
 
@@ -168,7 +159,15 @@
     padding: 20px;
     border-radius: 5px;
     margin: 3px;
+    .when {
+      display: flex;
+      margin-top: 30px;
+      img {
+        margin-right: 10px;
+      }
+    }
   }
+
   span {
     margin: 0;
   }
@@ -235,7 +234,21 @@
 .video_frame {
   margin: 10px auto;
   max-width: 900px;
-  background-color: var(--DarkCyan);
+  width: 100%;
+  // background-color: var(--DarkCyan);
+  iframe {
+    min-height: 430px;
+    width: 100%;
+  }
+}
+
+.blog_links {
+  margin-right: 0;
+  button {
+    margin-top: 0;
+    width: 100%;
+    padding: 0 25px;
+  }
 }
 .vimeo_v {
   margin-top: 80px;
@@ -377,6 +390,13 @@
     font-size: 35px;
   }
 }
+@media (max-width: 550px) {
+  .pic_grid {
+    .grid_pic {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
 @media (min-width: 767px) {
   .all_box {
     display: flex;
@@ -391,13 +411,21 @@
     max-width: 200px;
     margin-right: 10px;
   }
-  .cell_box {
-    position: absolute;
-    top: 0;
+}
+
+@media (min-width: 990px) {
+  .testimonial_box {
+    padding-bottom: 215px;
+  }
+  .carousel_box {
     margin: 0;
+  }
+  .gin {
+    top: 0;
     left: 40%;
   }
 }
+
 @media (min-width: 850px) {
   .diversity_banner {
     display: flex;

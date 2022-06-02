@@ -13,7 +13,7 @@
 }
 
 .diversity_banner {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .diversity_banner .frace h2 {
@@ -39,9 +39,15 @@
   top: 6px;
 }
 
+.pic_grid {
+  grid-auto-rows: 400px;
+}
+
 .pic_grid .grid_pic {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   gap: 5px;
 }
 
@@ -50,32 +56,12 @@
      object-fit: cover;
 }
 
-.pic_grid .grid_pic .item1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
+.pic_grid .column {
+  grid-column: span 2;
 }
 
-.pic_grid .grid_pic .item2 {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / span 2;
-}
-
-.pic_grid .grid_pic .item3 {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-.pic_grid .grid_pic .item4 {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 2;
-  grid-row: 2;
+.pic_grid .row {
+  grid-row: span 2;
 }
 
 .bysterling {
@@ -207,6 +193,17 @@
   margin: 3px;
 }
 
+.carousel_box .review_cards .when {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.carousel_box .review_cards .when img {
+  margin-right: 10px;
+}
+
 .carousel_box span {
   margin: 0;
 }
@@ -285,7 +282,22 @@
 .video_frame {
   margin: 10px auto;
   max-width: 900px;
-  background-color: var(--DarkCyan);
+  width: 100%;
+}
+
+.video_frame iframe {
+  min-height: 430px;
+  width: 100%;
+}
+
+.blog_links {
+  margin-right: 0;
+}
+
+.blog_links button {
+  margin-top: 0;
+  width: 100%;
+  padding: 0 25px;
 }
 
 .vimeo_v {
@@ -443,6 +455,13 @@
   }
 }
 
+@media (max-width: 550px) {
+  .pic_grid .grid_pic {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 767px) {
   .all_box {
     display: -webkit-box;
@@ -462,10 +481,17 @@
     max-width: 200px;
     margin-right: 10px;
   }
-  .cell_box {
-    position: absolute;
-    top: 0;
+}
+
+@media (min-width: 990px) {
+  .testimonial_box {
+    padding-bottom: 215px;
+  }
+  .carousel_box {
     margin: 0;
+  }
+  .gin {
+    top: 0;
     left: 40%;
   }
 }
