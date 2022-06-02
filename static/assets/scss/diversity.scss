@@ -131,15 +131,245 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 }
 
+// I KEPT THIS HERE FOR A CAROUSEL===========
+.owl-dots {
+  margin-top: 20px;
+  text-align: center;
+}
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  outline: 0;
+  border-radius: 50%;
+  background: rgba(51, 51, 51, 0.2) !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active {
+  background: var(--DarkCyan) !important;
+}
+.owl-carousel .owl-item img {
+  width: auto !important;
+}
+.owl-nav button {
+  display: none;
+}
+.carousel_box {
+  margin-top: 50px;
+  .review_cards {
+    background-color: var(--White);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 3px;
+  }
+  span {
+    margin: 0;
+  }
+  p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.36px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+  }
+  .stars {
+    display: flex;
+  }
+  .card_pic {
+    width: 60px;
+    height: 60px;
+  }
+  .card_name {
+    margin-left: 20px;
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      margin-top: 0;
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      letter-spacing: 0.02em;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.testimonial_box {
+  position: relative;
+  overflow: hidden;
+}
+// IT ENDS HERE=============
+.all_box {
+  margin-top: 15px;
+  max-width: 998px;
+}
+
 .p_box {
+  margin-bottom: 40px;
   img {
     width: 50px;
     height: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+  }
+  h5 {
+    margin-bottom: 10px;
+  }
+}
+.video_frame {
+  margin: 10px auto;
+  max-width: 900px;
+  background-color: var(--DarkCyan);
+}
+.vimeo_v {
+  margin-top: 80px;
+
+  .ip_btn {
+    text-align: center;
+    max-width: 165px;
+    margin: 20px auto 40px auto !important;
+  }
+}
+.play_video {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: none;
+  top: 70px;
+  .close_svg {
+    width: 35px;
+    margin-top: 50px;
+    height: 35px;
+    float: right;
+    cursor: pointer;
+  }
+  .video_frame {
+    margin: 100px auto;
+  }
+}
+.img_4_banner {
+  position: relative;
+  margin-top: 120px;
+  max-width: 1320px;
+  img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  h5 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--DarkCyan);
+    letter-spacing: 0.12em;
+  }
+}
+
+.diversity_assessment {
+  max-width: 875px;
+  h4 {
+    margin-top: 45px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  ul {
+    margin-top: 45px;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    margin-top: 30px;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+  }
+}
+.diversity_data {
+  margin-top: 80px;
+  max-width: 650px;
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
+  textarea {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 138px;
+    // margin-bottom: 50px;
+    padding: 15px;
+
+    border: 1px solid rgba(44, 51, 58, 0.5);
+  }
+}
+.educational_bg {
+  h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  span {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.submit_bt {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 275px;
+}
+
+.upload_img {
+  border: 2px solid var(--DarkCyan);
+  max-width: 270px;
+  height: 45px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+
+  label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--DarkCyan);
+  }
+  input {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -147,10 +377,25 @@
     font-size: 35px;
   }
 }
+@media (min-width: 767px) {
+  .all_box {
+    display: flex;
+    justify-content: space-between;
+    .p_box {
+      width: 45%;
+    }
+  }
+}
 @media (min-width: 480px) {
   .diversity_banner .frace button {
     max-width: 200px;
     margin-right: 10px;
+  }
+  .cell_box {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 40%;
   }
 }
 @media (min-width: 850px) {

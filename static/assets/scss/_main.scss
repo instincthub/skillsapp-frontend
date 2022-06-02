@@ -180,7 +180,7 @@ h5 {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
   color: var(--Gunmetal);
   margin: 8px 0;
   letter-spacing: 0em;
@@ -803,6 +803,63 @@ table {
   text-decoration: none;
   &:hover {
     color: var(--DarkCyan);
+  }
+}
+
+.testimonial_box {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  .p_reviews {
+    max-width: 410px;
+    h4 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+  .t_avatars {
+    display: flex;
+    margin-top: 24px;
+    .avatars__image {
+      box-shadow: 0 0 0 4px #fff;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 9999px;
+      h5 {
+        margin-top: 20px;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid var(--White);
+      }
+      .lap_2 {
+        position: relative;
+        left: -8px;
+      }
+      .lap_3 {
+        position: relative;
+        left: -16px;
+      }
+      .lap_4 {
+        position: relative;
+        left: -24px;
+      }
+      .lap_5 {
+        position: relative;
+        left: -32px;
+      }
+      .lap_6 {
+        position: relative;
+        left: -40px;
+      }
+      .lap_7 {
+        position: relative;
+        left: -48px;
+      }
+    }
   }
 }
 

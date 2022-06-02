@@ -224,7 +224,7 @@ ul li {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
   color: var(--Gunmetal);
   margin: 8px 0;
   letter-spacing: 0em;
@@ -293,7 +293,7 @@ li {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
   color: var(--Gunmetal);
   margin: 8px 0;
   letter-spacing: 0em;
@@ -948,6 +948,84 @@ table td {
 
 .pagination a:hover {
   color: var(--DarkCyan);
+}
+
+.testimonial_box {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.testimonial_box .p_reviews {
+  max-width: 410px;
+}
+
+.testimonial_box .p_reviews h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.testimonial_box .t_avatars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+}
+
+.testimonial_box .t_avatars .avatars__image {
+  -webkit-box-shadow: 0 0 0 4px #fff;
+          box-shadow: 0 0 0 4px #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 9999px;
+}
+
+.testimonial_box .t_avatars .avatars__image h5 {
+  margin-top: 20px;
+}
+
+.testimonial_box .t_avatars .avatars__image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--White);
+}
+
+.testimonial_box .t_avatars .avatars__image .lap_2 {
+  position: relative;
+  left: -8px;
+}
+
+.testimonial_box .t_avatars .avatars__image .lap_3 {
+  position: relative;
+  left: -16px;
+}
+
+.testimonial_box .t_avatars .avatars__image .lap_4 {
+  position: relative;
+  left: -24px;
+}
+
+.testimonial_box .t_avatars .avatars__image .lap_5 {
+  position: relative;
+  left: -32px;
+}
+
+.testimonial_box .t_avatars .avatars__image .lap_6 {
+  position: relative;
+  left: -40px;
+}
+
+.testimonial_box .t_avatars .avatars__image .lap_7 {
+  position: relative;
+  left: -48px;
 }
 
 .pagination a.active {
