@@ -987,8 +987,10 @@ table td {
   border-radius: 9999px;
 }
 
-.testimonial_box .t_avatars .avatars__image h5 {
-  margin-top: 20px;
+.testimonial_box .t_avatars .avatars__image p {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .testimonial_box .t_avatars .avatars__image img {

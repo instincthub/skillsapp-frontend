@@ -826,8 +826,10 @@ table {
       display: flex;
       justify-content: center;
       border-radius: 9999px;
-      h5 {
-        margin-top: 20px;
+      p {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 18px;
       }
       img {
         width: 40px;
