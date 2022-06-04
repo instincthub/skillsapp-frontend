@@ -16,7 +16,7 @@
   margin-top: 150px;
 
   .frace {
-    h2 {
+    h1 {
       font-weight: 600;
       font-size: 45px;
       line-height: 50px;
@@ -71,14 +71,14 @@
   text-align: center;
   padding: 20px 40px;
   margin: 40px 0;
-  h4 {
+  h2 {
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
   }
-  h4,
-  h1,
+  h3,
+  h2,
   p {
     color: var(--White);
   }
@@ -95,6 +95,16 @@
       text-align: center;
       p {
         text-align: center;
+        font-size: 48px;
+        font-family: var(--Montserat);
+        color: var(--Gunmetal);
+        font-weight: 500;
+        line-height: 110%;
+        color: var(--White);
+      }
+      h3 {
+        font-size: 16px;
+        color: var(--White);
       }
     }
   }
@@ -102,8 +112,9 @@
 .tech_overview {
   .purpose {
     margin-top: 80px;
-    h5 {
+    h2 {
       font-weight: 600;
+      margin-bottom: 10px;
       font-size: 20px;
       line-height: 30px;
     }
@@ -114,9 +125,10 @@
 }
 .participate {
   margin-top: 80px;
-  h4 {
+  h2 {
     font-weight: 600;
     font-size: 22px;
+    margin-bottom: 1px;
     line-height: 30px;
     margin-bottom: 40px;
   }
@@ -214,6 +226,14 @@
 .testimonial_box {
   position: relative;
   overflow: hidden;
+  .p_reviews {
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 0px;
+    }
+  }
 }
 // IT ENDS HERE=============
 .all_box {
@@ -228,7 +248,9 @@
     height: 50px;
     margin-bottom: 16px;
   }
-  h5 {
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 10px;
   }
 }
@@ -327,10 +349,11 @@
 .diversity_data {
   margin-top: 80px;
   max-width: 650px;
-  h4 {
+  h2 {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 15px;
     text-transform: capitalize;
   }
   textarea {
@@ -388,7 +411,7 @@
 }
 
 @media (max-width: 480px) {
-  .diversity_banner .frace h2 {
+  .diversity_banner .frace h1 {
     font-size: 35px;
   }
   .blog_nav {

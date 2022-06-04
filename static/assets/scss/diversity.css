@@ -16,7 +16,7 @@
   margin-top: 150px;
 }
 
-.diversity_banner .frace h2 {
+.diversity_banner .frace h1 {
   font-weight: 600;
   font-size: 45px;
   line-height: 50px;
@@ -81,15 +81,15 @@
   margin: 40px 0;
 }
 
-.cyrac h4 {
+.cyrac h2 {
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
   text-align: center;
 }
 
-.cyrac h4,
-.cyrac h1,
+.cyrac h3,
+.cyrac h2,
 .cyrac p {
   color: var(--White);
 }
@@ -116,14 +116,26 @@
 
 .cyrac .learning_box .numbers p {
   text-align: center;
+  font-size: 48px;
+  font-family: var(--Montserat);
+  color: var(--Gunmetal);
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--White);
+}
+
+.cyrac .learning_box .numbers h3 {
+  font-size: 16px;
+  color: var(--White);
 }
 
 .tech_overview .purpose {
   margin-top: 80px;
 }
 
-.tech_overview .purpose h5 {
+.tech_overview .purpose h2 {
   font-weight: 600;
+  margin-bottom: 10px;
   font-size: 20px;
   line-height: 30px;
 }
@@ -136,9 +148,10 @@
   margin-top: 80px;
 }
 
-.participate h4 {
+.participate h2 {
   font-weight: 600;
   font-size: 22px;
+  margin-bottom: 1px;
   line-height: 30px;
   margin-bottom: 40px;
 }
@@ -257,6 +270,13 @@
   overflow: hidden;
 }
 
+.testimonial_box .p_reviews h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 0px;
+}
+
 .all_box {
   margin-top: 15px;
   max-width: 998px;
@@ -272,7 +292,9 @@
   margin-bottom: 16px;
 }
 
-.p_box h5 {
+.p_box h3 {
+  font-size: 18px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -387,10 +409,11 @@
   max-width: 650px;
 }
 
-.diversity_data h4 {
+.diversity_data h2 {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 15px;
   text-transform: capitalize;
 }
 
@@ -447,7 +470,7 @@
 }
 
 @media (max-width: 480px) {
-  .diversity_banner .frace h2 {
+  .diversity_banner .frace h1 {
     font-size: 35px;
   }
   .blog_nav {

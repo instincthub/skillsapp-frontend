@@ -53,7 +53,7 @@
       </nav>
     </header>
     <div class="img_4_banner container">
-      <img src="../static/assets/svgs/diversity_bg.jpg" alt="" />
+      <img src="../static/assets/images/diversity_bg.jpg" alt="" />
       <!-- <h5>Tech Diversity</h5> -->
     </div>
 
@@ -100,7 +100,7 @@
     <form action="">
       <section class="container">
         <div class="diversity_data">
-          <h4>Personal Bio</h4>
+          <h2>Personal Bio</h2>
 
           <div class="personal_data">
             <div class="input_parent">
@@ -131,21 +131,22 @@
         ============ -->
       <section class="container">
         <div class="diversity_data educational_bg">
-          <h4>Educational background</h4>
+          <h2>Educational background</h2>
           <!-- University Name -->
           <h5>University Name*</h5>
-          <div class="personal_data">
-            <div class="radio_parent">
-              <label class="radio">
-                <input type="radio" name="scale" id="id_scale_10" value="10" />
-                <span>Bayero University, Kano</span>
-              </label>
-            </div>
-            <div class="radio_parent">
-              <label class="radio">
-                <input type="radio" name="scale" id="id_scale_10" value="10" />
-                <span>Bowen University, Iwo</span>
-              </label>
+          <div class="personal_data inputData">
+            <div class="input_parent">
+              <input type="text" placeholder="Search" id="searchFor" />
+              <label for="Last Name">Search</label>
+
+              <div class="uni_results">
+                <ul>
+                  <li>Name</li>
+                  <li>Name</li>
+                  <li>Name</li>
+                  <li>Name</li>
+                </ul>
+              </div>
             </div>
             <div class="input_parent">
               <input type="text" placeholder="Matric  Number *" />
@@ -482,4 +483,5 @@
   <script src="../../static/assets/js/select.js"></script>
   <script src="../../static/assets/js/upload.js"></script>
   <script src="../../static/assets/js/nav.js"></script>
+  <script src="../static/assets/js/autocomplete.js"></script>
 </html>
