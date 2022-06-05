@@ -1,7 +1,7 @@
 let universities = [
   "University of Lagos",
   "University of Ibadan",
-  "	Obafemi Awolowo University",
+  "Obafemi Awolowo University",
   "Afe Babalola University",
 ];
 
@@ -34,3 +34,9 @@ function renderResults(results) {
   inputData.classList.add("show");
   uniResults.innerHTML = `<ul>${content}</ul>`;
 }
+
+// content.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("universities")) {
+//     searchFor.value = e.target.textContent;
+//   }
+// });
