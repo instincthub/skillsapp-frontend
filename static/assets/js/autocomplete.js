@@ -102,7 +102,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-let universities = [
+let countries = [
   "Abia State University",
   "Abubakar Tafawa Balewa University",
   "Achievers University, Owo",
@@ -111,6 +111,24 @@ let universities = [
   "Adeleke University",
   "Admiralty University of Nigeria",
   "Afe Babalola University",
+  "African University of Science and Technology",
+  "Ahmadu Bello University",
+  "Ajayi Crowther University",
+  "Akwa Ibom State University",
+  "Alex Ekwueme Federal University, Ndufu-Alike",
+  "Al-Hikmah University",
+  "Al-Qalam University, Katsina",
+  "Ambrose Alli University",
+  "American University of Nigeria",
+  "Anchor University, Lagos",
+  "Arthur Jarvis University",
+  "Atiba University",
+  "Augustine University",
+  "Babcock University",
+  "Bauchi State University",
+  "Bayero University Kano",
+  "Baze University",
+  "Bells University of Technology",
 ];
 
-autocomplete(document.getElementById("myInput"), universities);
+autocomplete(document.getElementById("myInput"), countries);
