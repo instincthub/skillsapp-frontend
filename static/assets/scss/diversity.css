@@ -156,6 +156,32 @@
   margin-bottom: 40px;
 }
 
+.autocomplete-items {
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  background-color: var(--White);
+  top: 50px;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  font-family: var(--Nunito);
+  cursor: pointer;
+  z-index: 99;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: var(--Magnolia);
+}
+
 .owl-dots {
   margin-top: 20px;
   text-align: center;

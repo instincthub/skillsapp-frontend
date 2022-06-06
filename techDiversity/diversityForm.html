@@ -97,7 +97,7 @@
     <!--=============
          PERSONAL DATA
         ============ -->
-    <form action="">
+    <form autocomplete="off" action="">
       <section class="container">
         <div class="diversity_data">
           <h2>Personal Bio</h2>
@@ -136,19 +136,8 @@
           <h5>University Name*</h5>
           <div class="personal_data inputData">
             <div class="input_parent">
-              <input type="text" placeholder="Search" id="searchFor" />
+              <!-- <input type="text" placeholder="Search" id="searchFor" />
               <label for="Last Name">Search</label>
-              <!-- 
-              <div class="input_parent">
-                <input
-                  type="text"
-                  placeholder="Search University"
-                  list="ice-cream-flavors"
-                  id="ice-cream-choice"
-                  name="ice-cream-choice"
-                />
-                <label for="Last Name">Search University</label>
-              </div> -->
 
               <div class="uni_results">
                 <ul>
@@ -157,16 +146,20 @@
                   <li>Name</li>
                   <li>Name</li>
                 </ul>
-              </div>
+              </div> -->
 
-              <!-- 
-              <datalist id="ice-cream-flavors">
-                <option value="Chocolate"></option>
-                <option value="Coconut"></option>
-                <option value="Mint"></option>
-                <option value="Strawberry"></option>
-                <option value="Vanilla"></option>
-              </datalist> -->
+              <!-- <form autocomplete="off" action=""> -->
+              <!-- <div class="autocomplete" style="width: 300px"> -->
+              <input
+                id="myInput"
+                type="text"
+                name="myCountry"
+                placeholder="Country"
+              />
+              <label for="Last Name">Search</label>
+              <!-- </div> -->
+
+              <!-- </form> -->
             </div>
             <div class="input_parent">
               <input type="text" placeholder="Matric  Number *" />

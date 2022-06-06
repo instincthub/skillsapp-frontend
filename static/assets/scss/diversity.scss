@@ -134,6 +134,33 @@
   }
 }
 
+// DUMMY
+
+.autocomplete-items {
+  z-index: 99;
+  // display: none;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  background-color: var(--White);
+  top: 50px;
+
+  // -webkit-animation: uni_results 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  // animation: uni_results 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.autocomplete-items div {
+  padding: 10px;
+  font-family: var(--Nunito);
+  cursor: pointer;
+  z-index: 99;
+  background-color: #fff;
+  transition: 0.4s;
+  border-bottom: 1px solid #d4d4d4;
+  &:hover {
+    background-color: var(--Magnolia);
+  }
+}
 // I KEPT THIS HERE FOR A CAROUSEL===========
 .owl-dots {
   margin-top: 20px;
