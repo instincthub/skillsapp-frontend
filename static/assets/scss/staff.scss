@@ -386,7 +386,9 @@ header {
 
 .mini_menu {
   display: none;
+  // position: absolute;
 }
+
 .mini_menu.active {
   display: block;
   & + .dropdown {
@@ -458,7 +460,7 @@ header {
     border-bottom: 1px solid rgba(44, 51, 58, 0.214);
   }
   .mini_menu {
-    a {
+    pos a {
       display: block;
       padding: 10px 20px;
       &:hover {
@@ -514,7 +516,9 @@ header {
     position: absolute;
     top: -55px;
     z-index: -1;
-    left: 30%;
+
+    // width: 100%;
+    // left: 30%;
     padding-top: 30px;
 
     a {

@@ -2371,11 +2371,11 @@ header nav {
     margin: 0;
     border-bottom: 1px solid rgba(44, 51, 58, 0.214);
   }
-  .mini_menu a {
+  .mini_menu pos a {
     display: block;
     padding: 10px 20px;
   }
-  .mini_menu a:hover {
+  .mini_menu pos a:hover {
     background-color: var(--Magnolia);
   }
 }
@@ -2435,7 +2435,6 @@ header nav {
     position: absolute;
     top: -55px;
     z-index: -1;
-    left: 30%;
     padding-top: 30px;
   }
   .mini_menu a {

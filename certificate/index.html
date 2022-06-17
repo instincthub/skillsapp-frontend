@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate of Completion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="favicon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <main>
+      <label for="name">Type Your Name</label>
+      <input
+        required
+        type="text"
+        name="Name"
+        autocomplete="name"
+        id="name"
+        minlength="3"
+      />
+      <input
+        required
+        type="text"
+        name="Name"
+        autocomplete="name"
+        id="date"
+        minlength="3"
+        value="date"
+      />
+      <!-- <h3 id="newDate"></h3> -->
+      <input
+        required
+        type="text"
+        name="Date"
+        autocomplete="name"
+        id="ticketid"
+        minlength="3"
+        value="47579578"
+      />
+      <input
+        required
+        type="text"
+        name="name"
+        autocomplete="name"
+        id="certificate_Course"
+        minlength="3"
+        value="HTML, CSS and Javascript Basics"
+      />
+      <button id="submitBtn">Get Certificate</button>
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
